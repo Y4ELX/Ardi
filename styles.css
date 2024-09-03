@@ -744,6 +744,10 @@ font-size: 2.5vh;
 
 }
 
+iframe{
+    pointer-events: none;
+}
+
 .audio-player{
     width: 100%;
 }

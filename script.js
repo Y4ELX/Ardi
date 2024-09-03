@@ -8,7 +8,7 @@ try {
     const playPauseBtn = document.getElementById('playPauseBtn');
 
     audio.src = "img/audio.mp3";
-    playPauseBtn.style.backgroundImage = 'url("img/playbutton.png")';
+    playPauseBtn.style.backgroundImage = 'url("img/playbutton.svg")';
     ESPP.style.textDecoration = 'underline';
     ESPP.style.color = '#E6E5DD';
     ENGP.style.textDecoration = 'none';
@@ -123,3 +123,20 @@ function smoothScroll() {
 
 window.addEventListener('wheel', onScroll);
 smoothScroll();
+
+//! Cursor
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    document.addEventListener('mousemove', function (e) {
+        const { clientX, clientY } = e;
+        const cursorSize = 20;
+        const cursorHalfSize = cursorSize / 8;
+        const cursorX = clientX - cursorHalfSize;
+        const cursorY = clientY - cursorHalfSize;
+
+        cursor.style.left = `${cursorX}px`;
+        cursor.style.top = `${cursorY}px`;
+    });
+});

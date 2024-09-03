@@ -27,7 +27,7 @@
     <link rel="preload" href="img/framenoise.png" as="image">
     <link rel="preload" href="img/arroba.svg" as="image">
     <link rel="preload" href="img/CASG.png" as="image">
-    <link rel="preload" href="img/playbutton.png" as="image">
+    <link rel="preload" href="img/playbutton.svg" as="image">
 
 
     <link rel="preload" href="fonts/futura.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -41,7 +41,8 @@
 
 </head>
 <body>
-    
+    <div id="cursor"></div>
+
     <button class="colombiaBtn">De Colombia, para el mundo</button>
     <div class="image-container"></div>
 
@@ -49,7 +50,7 @@
         
         <div class="navbar">
             <div class="etiqueta">
-                <img onclick="window.location.href='index.html'" class="manita" src="img/transparent.png" alt="">
+                <img onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='indexes.html'" class="manita" src="img/transparent.png" alt="">
                 <div class="nombreEt">
                     <p style="font-family: futuraB; font-size: 2vh; color: white;"> Juan Pablo Ardila
                     </p>
@@ -65,12 +66,12 @@
                 <div id="optionSel" class="optionSel">
                     <div class="lucecita"></div>
                 </div>
-                <div onclick="irA('A')" class="optionsA">Acerca de</div>
-                <div onclick="irA('T')" class="optionsT">Trabajo</div>
+                <div onclick="irA('A')" class="optionsA" onmouseover="cursorPT()" onmouseleave="cursorNM()">Acerca de</div>
+                <div onclick="irA('T')" class="optionsT"onmouseover="cursorPT()" onmouseleave="cursorNM()" >Trabajo</div>
             </div>
         
             <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
-                <button onclick="openMenu()" class="btnArroba">
+                <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="openMenu()" class="btnArroba">
                     <img id="imgArroba" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute" src="img/arroba.svg" alt="">
                     <img id="imgClose" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute; opacity: 0;" src="img/close.svg" alt="">
                 </button>
@@ -98,16 +99,16 @@
                         <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
                     
                         <div style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                            <button onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
                                 LINKEDIN
                             </button>
-                            <button onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
                                 INSTAGRAM
                             </button>
-                            <button onclick="window.open('https://www.behance.net/juanpardila')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://www.behance.net/juanpardila')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
                                 BEHANCE
                             </button>
                         </div>
@@ -115,7 +116,7 @@
 
                 </div>
 
-                <div id="language-selector">
+                <div id="language-selector" onmouseover="cursorPT()" onmouseleave="cursorNM()">
                     <div id="selected-language">
                         <img src="img/coflag.png" id="language-flag" class="flag-icon">
                     </div>
@@ -243,8 +244,8 @@
             </div>
         
             <div style="display: flex; flex-direction: row; gap: 2vh; font-size: 2.5vh;">
-                <p onclick="changelang('ESP')" id="ESP" style="cursor: pointer; text-decoration: underline;">ESP</p>
-                <p onclick="changelang('ENG')" id="ENG" style="cursor: pointer;">ENG</p>
+                <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="changelang('ESP')" id="ESP" style="   text-decoration: underline;">ESP</p>
+                <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="changelang('ENG')" id="ENG" style="  ">ENG</p>
             </div>
         
             <audio id="audio" src="img/audio.mp3"></audio>
@@ -252,7 +253,7 @@
             <div class="audio-player">
                 <div
                     style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 2vh;">
-                    <button id="playPauseBtn" class="playPauseBtn"></button>
+                    <button onmouseover="cursorPT()" onmouseleave="cursorNM()" id="playPauseBtn" class="playPauseBtn"></button>
                     <input class="range" type="range" id="seekSlider" value="0" max="100">
                 </div>
                 <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; font-size: 2.5vh;">
@@ -441,7 +442,7 @@
             siéntete en casa experimentando las creaciones de este jóven rebelde, soñador y aventurero.</p>
         
         <div
-            style="cursor: pointer; gap: 1vh; height: 2.7vh; flex-direction: row; display: flex; justify-content: center; align-items: center;">
+            style="   gap: 1vh; height: 2.7vh; flex-direction: row; display: flex; justify-content: center; align-items: center;">
             <p onclick="window.open('https://www.behance.net/juanpardila')" class="textoPlano"
                 style="margin: 0px; font-family: neueM; font-size: 2.2vh; width: fit-content; text-align: center;">BEHANCE</p>
             <img src="img/flechita.png" style="height: 1.1vh;" alt="">
@@ -503,7 +504,7 @@
         <div style="margin-top: 10vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2vh; margin-bottom: 50vh;">
             <div style="display: flex; flex-direction: row; gap: 2vh; justify-content: center; align-items: center;">
                 <img src="img/flechita.png" style="height: 1vh;" alt="">
-                <p class="messinaText" style="color: #CCCBC4; font-size: 2vh;">TAKE A LOOK AT ALL MY WORK</p>
+                <p class="messinaText" style="color: #CCCBC4; font-size: 2vh;">ECHA UN VISTAZO A TODOS MIS TRABAJOS</p>
             </div>
             <img src="img/line.png" style="width: 17vh;" alt="">
         </div>
@@ -520,10 +521,10 @@
 
                 <div class="links2col">
                     <div style="display: flex; flex-direction: column; gap: 2vh;">
-                        <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">EXPLORAR</p>
-                        <div class="linksExt" class="linksExt">TRABAJO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
-                        <div class="linksExt">CONTACTO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
-                        <div class="linksExt">INSPIRACION <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <p onmouseover="cursorPT()" onmouseleave="cursorNM()" style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">EXPLORAR</p>
+                        <div onclick="window.location.href='workes.html'" onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt" class="linksExt">TRABAJO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt">CONTACTO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt">INSPIRACION <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
                     </div>
 
                     <div style="display: flex; flex-direction: column; gap: 2vh;">
@@ -537,8 +538,8 @@
                 </div>
 
                 <div>
-                    <p onclick="window.location.href='index.html'" style="cursor: pointer; font-size: 2vh;"><span style="color: #707070;">DESIGN</span> <img src="img/coflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">JUAN PABLO ARDILA</span></p>
-                    <p onclick="window.open('https://github.com/Y4ELX')" style="cursor: pointer; font-size: 2vh;"><span style="color: #707070;">DEV</span> <img src="img/mxflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">YAEL MONTERRUBIO</span></p>
+                    <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='indexes.html'" style="   font-size: 2vh;"><span style="color: #707070;">DESIGN</span> <img src="img/coflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">JUAN PABLO ARDILA</span></p>
+                    <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://github.com/Y4ELX')" style="   font-size: 2vh;"><span style="color: #707070;">DEV</span> <img src="img/mxflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">YAEL MONTERRUBIO</span></p>
                 </div>
 
                 <div>
@@ -642,6 +643,25 @@
         }
     }
 
+</script>
+
+<script>
+    const cursorr = document.getElementById('cursor');
+
+    function cursorCH() {
+        cursorr.style.transform = 'scale(0.75)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
+
+    function cursorPT() {
+        cursorr.style.backgroundColor = 'transparent';
+        cursorr.style.backgroundImage = 'url("img/cursor.svg")';
+    }
+
+    function cursorNM() {
+        cursorr.style.transform = 'scale(1)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
 </script>
 
 </html>

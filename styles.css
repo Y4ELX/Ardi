@@ -1,3 +1,7 @@
+*{
+    cursor: none;
+}
+
 body{
     background-color: #000000;
     margin: 0px;
@@ -48,7 +52,7 @@ font-size: 1.7vh;
 #language {
     background-color: transparent;
     border: none;
-    cursor: pointer;
+     
     position: absolute;
 
     top: 0;
@@ -150,23 +154,11 @@ font-size: 2vh;
         justify-content: center;
         align-items: center;
 
+        background-image: url(img/fnbg.png);
+        background-size: 30vh;
+        background-repeat: repeat;
+
         margin-top: 100vh;
-}
-
-.principalDiv::after {
-    content: '';
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 100%;
-    height: 1093vh;
-    z-index: 1;
-    background-image: url(img/framenoise.png);
-    background-size: 30vh;
-    opacity: calc(7 / 100);
-
-    /* Superposición oscura */
-    pointer-events: none;
 }
 
 .principalDivW{
@@ -181,6 +173,10 @@ font-size: 2vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        background-image: url(img/fnbg.png);
+        background-size: 30vh;
+        background-repeat: repeat;
 }
 
 
@@ -199,22 +195,6 @@ html{
 
 .footerParent{
     width: 70%;
-}
-
-.principalDivW::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1350vh;
-    z-index: 1;
-    background-image: url(img/framenoise.png);
-    background-size: 30vh;
-    opacity: calc(7 / 100);
-
-    /* Superposición oscura */
-    pointer-events: none;
 }
 
 p, hr{
@@ -357,7 +337,7 @@ font-size: 4vh;
     position: relative;
     gap: 1.5vh;
     padding: 1vh 0vh;
-    border: solid 0.1vh #E6E5DD;
+    border: solid 0.3vh #E6E5DD;
     border-radius: 100vh;
     padding-inline: 2vh;
     width: 50vh;
@@ -447,7 +427,6 @@ font-size: 2vh;
 }
 
 .btnArroba{
-    cursor: pointer;
     position: relative;
     background-color: transparent;
     border-radius: 100vh;
@@ -521,7 +500,7 @@ font-size: 2.3vh;
     align-items: center;
     height: calc(100% - 1.5vh);
 
-    cursor: pointer;
+     
     transition: background 0.7s ease;
 }
 
@@ -544,7 +523,7 @@ font-size: 2.3vh;
     align-items: center;
     height: calc(100% - 1.5vh);
 
-    cursor: pointer;
+     
     transition: background 0.7s ease;
 }
 
@@ -770,13 +749,14 @@ font-size: 2.5vh;
 }
 
 .playPauseBtn{
-    cursor: pointer;
+     
     background-color: transparent;
     height: 2.5vh;
     width: 2.5vh;
     border: none;
-    background-image: url('img/playbutton.png');
+    background-image: url('img/playbutton.svg');
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -929,7 +909,7 @@ font-size: 2.5vh;
     background: white;
     /* Fondo transparente para el slider base */
     outline: none;
-    cursor: pointer;
+     
     margin: 0;
     padding: 0;
 }
@@ -967,7 +947,7 @@ font-size: 2.5vh;
     height: 1.5vh;
     background: #FFAC00;
     border-radius: 50%;
-    cursor: pointer;
+     
     margin-top: -0.55vh;
     /* Alineación vertical del thumb */
 }
@@ -977,7 +957,7 @@ font-size: 2.5vh;
     height: 1.5vh;
     background: #FFAC00;
     border-radius: 50%;
-    cursor: pointer;
+     
 }
 
 /*GRID DIFICIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIL*/
@@ -1335,6 +1315,7 @@ font-size: 8vh;
 /*!PROYECTOOOPSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 .parentPR {
     width: 65%;
+    padding-bottom: 20vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 3.5vh;
@@ -1495,6 +1476,11 @@ font-size: 2vh;
 .pryct12 {
     grid-column: span 6 / span 6;
     grid-row-start: 8;
+
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct13 {
@@ -1506,26 +1492,69 @@ font-size: 2vh;
     grid-column: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 9;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct15 {
     grid-column: span 6 / span 6;
     grid-row-start: 10;
+
+    overflow: hidden;
+    position: relative;
+    height: 52vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct16 {
     grid-column: span 6 / span 6;
     grid-row-start: 11;
+
+    overflow: hidden;
+    position: relative;
+    height: 52vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct17 {
     grid-column: span 6 / span 6;
     grid-row-start: 12;
+
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct18 {
     grid-column: span 3 / span 3;
     grid-row-start: 13;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct19 {
@@ -1537,48 +1566,164 @@ font-size: 2vh;
 .pryct20 {
     grid-column: span 3 / span 3;
     grid-row-start: 14;
+
+    overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct21 {
     grid-column: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 14;
+
+    overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct22 {
     grid-column: span 3 / span 3;
     grid-row-start: 15;
+
+        overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct23 {
     grid-column: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 15;
+    
+        overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct24 {
     grid-column: span 6 / span 6;
     grid-row-start: 16;
+
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct25 {
     grid-column: span 6 / span 6;
     grid-row-start: 17;
+
+        overflow: hidden;
+    position: relative;
+    height: 40vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct26 {
     grid-column: span 6 / span 6;
     grid-row-start: 18;
+
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct27 {
     grid-column: span 6 / span 6;
     grid-row-start: 19;
+
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct28 {
     grid-column: span 3 / span 3;
     grid-row-start: 20;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct29 {
@@ -1590,21 +1735,61 @@ font-size: 2vh;
 .pryct30 {
     grid-column: span 6 / span 6;
     grid-row-start: 21;
+
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct31 {
     grid-column: span 6 / span 6;
     grid-row-start: 22;
+
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct32 {
     grid-column: span 6 / span 6;
     grid-row-start: 23;
+
+    height: 10vh;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct33 {
     grid-column: span 3 / span 3;
     grid-row-start: 24;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct34 {
@@ -1616,28 +1801,84 @@ font-size: 2vh;
 .pryct35 {
     grid-column: span 2 / span 2;
     grid-row-start: 25;
+
+    overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+    height: 40vh;
 }
 
 .pryct36 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 25;
+
+            overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+    height: 40vh;
 }
 
 .pryct37 {
     grid-column: span 2 / span 2;
     grid-column-start: 5;
     grid-row-start: 25;
+
+    overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+    height: 40vh;
 }
 
 .pryct38 {
     grid-column: span 6 / span 6;
     grid-row-start: 26;
+
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct39 {
     grid-column: span 3 / span 3;
     grid-row-start: 27;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .pryct40 {
@@ -1649,22 +1890,96 @@ font-size: 2vh;
 .pryct41 {
     grid-column: span 3 / span 3;
     grid-row-start: 28;
+
+        overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+    height: 40vh;
 }
 
 .pryct42 {
     grid-column: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 28;
+
+        overflow: hidden;
+    position: relative;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: end;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+    height: 40vh;
 }
 
 .pryct43 {
     grid-column: span 6 / span 6;
     grid-row-start: 29;
+
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 .pryct44 {
     grid-column: span 6 / span 6;
     grid-row-start: 30;
+
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pryct45 {
+    grid-column: span 6 / span 6;
+    grid-row-start: 32;
+
+    overflow: hidden;
+    position: relative;
+    height: 20vh;
+    border-radius: 3vh;
+    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: messinaSB;
+    justify-content: space-between;
+    align-items: start;
+    color: #FFF6E5;
+    z-index: 2;
+    font-size: 2vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
 @keyframes slideLeft {
@@ -1705,6 +2020,21 @@ font-size: 10vh;
 .nombreEt{
     display: flex;
     flex-direction: column;
+}
+
+#cursor {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    width: 2.8vh;
+    height: 2.8vh;
+    border-radius: 50%;
+    background-color: #fff6e5;
+    pointer-events: none;
+    transition: transform 0.2s ease-out;
+    transform-origin: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .manita{
@@ -2154,5 +2484,20 @@ font-size: 2vh
         margin-top: 4vh;
         z-index: 2;
 font-size: 2vh
+    }
+
+    .minimenu{
+        backdrop-filter: blur(1vh);
+        -webkit-backdrop-filter: blur(1vh);
+    }
+
+    .btnArroba{
+        backdrop-filter: blur(1vh);
+        -webkit-backdrop-filter: blur(1vh);
+    }
+
+    .lucecita{
+        background-color: #ebebeb;
+        box-shadow: 0px 0px 5vh 2vh #ffffff9a;
     }
 }

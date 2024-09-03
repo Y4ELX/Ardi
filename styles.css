@@ -1,8 +1,8 @@
-*{
+* {
     cursor: none;
 }
 
-body{
+body {
     background-color: #000000;
     margin: 0px;
     padding: 0px;
@@ -29,30 +29,30 @@ body{
     box-shadow: 0px 0.5vh 2vh #3030307e;
 }
 
-.nebdes{
+.nebdes {
     padding: 1vh;
     background-color: #51515158;
     border-radius: 1vh;
     font-family: futuraB;
     z-index: 2;
-font-size: 2.5vh;
+    font-size: 2.5vh;
     color: #fff6e5;
     white-space: pre;
     margin-top: 1vh;
     margin-bottom: 3vh;
 }
 
-.contactame{
+.contactame {
     font-family: messinaSB;
     color: #fff6e5;
     z-index: 2;
-font-size: 1.7vh;
+    font-size: 1.7vh;
 }
 
 #language {
     background-color: transparent;
     border: none;
-     
+
     position: absolute;
 
     top: 0;
@@ -75,7 +75,7 @@ font-size: 1.7vh;
     width: 5.5vh;
 }
 
-.navbar{
+.navbar {
     padding-top: 1vh;
     display: flex;
     flex-direction: row;
@@ -94,7 +94,7 @@ font-size: 1.7vh;
     width: 50vh;
     font-family: futura-pt;
     z-index: 2;
-font-size: 3vh;
+    font-size: 3vh;
     background-color: #161616;
     /* Change this to your desired background color */
     color: #e6ded0;
@@ -103,7 +103,7 @@ font-size: 3vh;
 
 /*!termina iDIOMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 
-.colombiaBtn{
+.colombiaBtn {
     color: transparent;
     width: 10vh;
     height: 10vh;
@@ -111,7 +111,7 @@ font-size: 3vh;
     left: 60vw;
     border: none;
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     text-align: start;
     border-radius: 100vh;
     background-image: url(img/colombia.png);
@@ -126,14 +126,14 @@ font-size: 2vh;
     transition: width 1.1s ease-in-out, color 0.4s ease-out, background-color 1.1s step-end;
 }
 
-.meanings{
+.meanings {
     display: flex;
     flex-direction: column;
     padding-top: 4vh;
     gap: 3vh;
 }
 
-.colombiaBtn:hover{
+.colombiaBtn:hover {
     width: 30vh;
     background-color: #FFF6E5;
     background-image: none;
@@ -141,42 +141,42 @@ font-size: 2vh;
     transition: width 0.4s ease-in-out, color 1.1s ease-in;
 }
 
-.principalDiv{
+.principalDiv {
     background-color: #000000;
-        margin: 0px;
-        padding: 0px;
-    
-        width: 100%;
+    margin: 0px;
+    padding: 0px;
 
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    width: 100%;
 
-        background-image: url(img/fnbg.png);
-        background-size: 30vh;
-        background-repeat: repeat;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        margin-top: 100vh;
+    background-image: url(img/fnbg.png);
+    background-size: 30vh;
+    background-repeat: repeat;
+
+    margin-top: 100vh;
 }
 
-.principalDivW{
+.principalDivW {
     background-color: #000000;
-        margin: 0px;
-        padding: 0px;
-    
-        width: 100%;
-        
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        background-image: url(img/fnbg.png);
-        background-size: 30vh;
-        background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(img/fnbg.png);
+    background-size: 30vh;
+    background-repeat: repeat;
 }
 
 
@@ -185,19 +185,20 @@ font-size: 2vh;
     color: black;
 }
 
-html{
-        scrollbar-color: #f3ebdc #0f0f0f;
-            scrollbar-width: thin;
+html {
+    scrollbar-color: #f3ebdc #0f0f0f;
+    scrollbar-width: thin;
 }
 
 
 
 
-.footerParent{
+.footerParent {
     width: 70%;
 }
 
-p, hr{
+p,
+hr {
     margin: 0px;
     padding: 0px;
 }
@@ -207,9 +208,9 @@ p, hr{
     src: url(fonts/futuraB.ttf);
 }
 
-.parasentirte{
+.parasentirte {
     z-index: 2;
-font-size: 2.7vh;
+    font-size: 2.7vh;
     width: 100%;
     text-align: center;
 }
@@ -283,10 +284,10 @@ font-size: 2.7vh;
     display: inline-block;
 }
 
-.DescText{
+.DescText {
     font-family: stratosSB;
     z-index: 2;
-font-size: 4vh;
+    font-size: 4vh;
     color: #fff6e5;
 }
 
@@ -329,7 +330,7 @@ font-size: 4vh;
     }
 }
 
-.inisgniaRounded{
+.inisgniaRounded {
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -387,13 +388,12 @@ font-size: 4vh;
     }
 }
 
-.textoPlanoAcurated{
+.textoPlanoAcurated {
     font-family: futura-pt;
     color: #E6E5DD;
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     text-align: center;
-    margin-bottom: 7vh;
     width: 90%;
 }
 
@@ -419,14 +419,14 @@ font-size: 2vh;
     }
 }
 
-.imgSlider{
+.imgSlider {
     background-attachment: fixed;
     width: fit-content;
     height: 100%;
     z-index: 2;
 }
 
-.btnArroba{
+.btnArroba {
     position: relative;
     background-color: transparent;
     border-radius: 100vh;
@@ -436,7 +436,7 @@ font-size: 2vh;
     width: 6vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 
     backdrop-filter: blur(2vh);
     -webkit-backdrop-filter: blur(2vh);
@@ -447,12 +447,12 @@ font-size: 2vh;
     transition: background-color 0.5s ease;
 }
 
-.btnArroba:hover{
+.btnArroba:hover {
     background-color: #cccccc10;
     transition: background-color 0.5s ease;
 }
 
-.minimenu{
+.minimenu {
     position: absolute;
     width: fit-content;
     height: 4vh;
@@ -474,23 +474,23 @@ font-size: 2vh;
     transition: background-color 0.5s ease;
 }
 
-.minimenu:hover{
+.minimenu:hover {
     background-color: #cccccc10;
     transition: background-color 0.5s ease;
 }
 
-.WIAB{
+.WIAB {
     font-family: stratosSB;
     z-index: 2;
-font-size: 8vh;
+    font-size: 8vh;
     color: #fff6e5;
 }
 
-.optionsA{
+.optionsA {
     font-family: futura-pt-bold;
     color: #FFF6E5;
     z-index: 2;
-font-size: 2.3vh;
+    font-size: 2.3vh;
     border-radius: 100vh;
     text-align: center;
     width: 11vh;
@@ -500,20 +500,20 @@ font-size: 2.3vh;
     align-items: center;
     height: calc(100% - 1.5vh);
 
-     
+
     transition: background 0.7s ease;
 }
 
-.optionsA:hover{
+.optionsA:hover {
     background: linear-gradient(90deg, rgba(230, 229, 221, 0.101) 35%, rgba(230, 229, 221, 0) 100%);
     transition: background 0.5s ease;
 }
 
-.optionsT{
+.optionsT {
     font-family: futura-pt;
     color: #fff6e5;
     z-index: 2;
-font-size: 2.3vh;
+    font-size: 2.3vh;
     border-radius: 100vh;
     text-align: center;
     width: 11vh;
@@ -523,16 +523,16 @@ font-size: 2.3vh;
     align-items: center;
     height: calc(100% - 1.5vh);
 
-     
+
     transition: background 0.7s ease;
 }
 
-.optionsT:hover{
+.optionsT:hover {
     background: linear-gradient(90deg, rgba(230, 229, 221, 0) 35%, rgba(230, 229, 221, 0.101) 100%);
     transition: background 0.5s ease;
 }
 
-.optionSel{
+.optionSel {
     white-space: pre;
     left: 1vh;
     position: absolute;
@@ -550,7 +550,7 @@ font-size: 2.3vh;
     -webkit-backdrop-filter: blur(3vh);
 }
 
-.etiqueta{
+.etiqueta {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -586,7 +586,7 @@ font-size: 2.3vh;
     src: url(fonts/stratosSB.ttf);
 }
 
-.QS{
+.QS {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -601,7 +601,17 @@ font-size: 2.3vh;
     margin-top: 10vh;
 }
 
-.QShistoria{
+.title {
+    font-family: stratosSB;
+    font-size: 7vh;
+}
+
+.titleAB {
+    font-family: stratosSB;
+    font-size: 7vh;
+}
+
+.QShistoria {
     text-align: center;
     display: none;
     flex-direction: row;
@@ -616,7 +626,7 @@ font-size: 2.3vh;
     margin-top: 10vh;
 }
 
-.QSintrospeccion{
+.QSintrospeccion {
     text-align: center;
     display: none;
     flex-direction: row;
@@ -625,13 +635,17 @@ font-size: 2.3vh;
     color: #ffffff;
     gap: 2vh;
     z-index: 2;
-font-size: 9vh;
+    font-size: 9vh;
     font-family: stratosSB;
     height: 30vh;
     margin-top: 10vh;
 }
 
-.QSVeci{
+#celutitle{
+    display: none;
+}
+
+.QSVeci {
     text-align: center;
     display: none;
     flex-direction: row;
@@ -640,13 +654,13 @@ font-size: 9vh;
     color: #ffffff;
     gap: 2vh;
     z-index: 2;
-font-size: 9vh;
+    font-size: 9vh;
     font-family: stratosSB;
     height: 30vh;
     margin-top: 10vh;
 }
 
-.QSCreate{
+.QSCreate {
     text-align: center;
     display: none;
     flex-direction: row;
@@ -655,13 +669,13 @@ font-size: 9vh;
     color: #ffffff;
     gap: 2vh;
     z-index: 2;
-font-size: 9vh;
+    font-size: 9vh;
     font-family: stratosSB;
     height: 30vh;
     margin-top: 10vh;
 }
 
-.QScelu{
+.QScelu {
     text-align: center;
     display: none;
     flex-direction: row;
@@ -670,7 +684,7 @@ font-size: 9vh;
     color: #ffffff;
     gap: 2vh;
     z-index: 2;
-font-size: 9vh;
+    font-size: 9vh;
     font-family: stratosSB;
     height: 30vh;
     margin-top: 10vh;
@@ -691,7 +705,7 @@ font-size: 9vh;
     font-family: messinaSB;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
@@ -706,21 +720,21 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
 
-.links2col{
+.links2col {
     display: flex;
     flex-direction: row;
     gap: 50%;
 }
 
-.linksExt{
+.linksExt {
     font-family: futura-pt;
     z-index: 2;
-font-size: 2.6vh;
+    font-size: 2.6vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -728,7 +742,7 @@ font-size: 2.6vh;
     gap: 1vh;
 }
 
-.significado{
+.significado {
     grid-row-start: 2;
     border-radius: 3vh;
     padding: 5vh 10vh 5vh 2.5vh;
@@ -739,21 +753,21 @@ font-size: 2.6vh;
     align-items: start;
     color: #E6E5DD;
     z-index: 2;
-font-size: 2.5vh;
+    font-size: 2.5vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
 
-iframe{
+iframe {
     pointer-events: none;
 }
 
-.audio-player{
+.audio-player {
     width: 100%;
 }
 
-.playPauseBtn{
-     
+.playPauseBtn {
+
     background-color: transparent;
     height: 2.5vh;
     width: 2.5vh;
@@ -764,7 +778,7 @@ iframe{
     background-repeat: no-repeat;
 }
 
-.audio{
+.audio {
     border-radius: 3vh;
     padding: 5vh 2.5vh 0vh 2.5vh;
     font-family: futura-pt;
@@ -774,52 +788,52 @@ iframe{
     align-items: start;
     color: #E6E5DD;
     z-index: 2;
-font-size: 3vh;
+    font-size: 3vh;
     gap: 2vh;
     width: calc(65% - 5vh);
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
 
-.textoPlano{
+.textoPlano {
     font-family: futura-pt;
     color: #E6E5DD;
 }
 
-.textoPlanoDesc{
+.textoPlanoDesc {
     font-family: futura-pt;
     color: #E6E5DD;
     z-index: 2;
-font-size: 3vh;
+    font-size: 3vh;
 }
 
-.textoPlanoUS{
+.textoPlanoUS {
     font-family: futura-pt;
     color: #E6E5DD;
     z-index: 2;
-font-size: 2.7vh;
+    font-size: 2.7vh;
     width: 70%;
     text-align: center;
     margin-bottom: 7vh;
 }
 
-.messinaText{
+.messinaText {
     font-family: messinaSB;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 1.5vh;
+    font-size: 1.5vh;
 }
 
 .stratosText {
     font-family: stratosSB;
     color: #fff6e5;
     z-index: 2;
-font-size: 4vh;
+    font-size: 4vh;
 }
 
-.lucecita{
+.lucecita {
     position: absolute;
-    
+
     transform: translate(-50%, 0%);
     top: -1.1vh;
     left: 50%;
@@ -832,7 +846,7 @@ font-size: 4vh;
     border-radius: 100vh 100vh 0 0;
 }
 
-.panelCreo{
+.panelCreo {
     text-align: center;
 
     position: relative;
@@ -848,14 +862,14 @@ font-size: 4vh;
     color: #fff6e5;
     background-color: #c5c5c6;
     z-index: 2;
-font-size: 3vh;
+    font-size: 3vh;
     gap: 2vh;
     width: calc(65% - 5vh);
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
 
-.insignias{
+.insignias {
     position: relative;
     overflow: visible;
     height: fit-content;
@@ -870,12 +884,12 @@ font-size: 3vh;
     align-items: start;
     color: #E6E5DD;
     z-index: 2;
-font-size: 2.5vh;
+    font-size: 2.5vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
 
-.gradientBG{
+.gradientBG {
     position: absolute;
     top: -5%;
     left: -5%;
@@ -884,7 +898,7 @@ font-size: 2.5vh;
     height: 110%;
 }
 
-.gradientBGCREO{
+.gradientBGCREO {
     position: absolute;
     top: -5%;
     left: -5%;
@@ -913,7 +927,7 @@ font-size: 2.5vh;
     background: white;
     /* Fondo transparente para el slider base */
     outline: none;
-     
+
     margin: 0;
     padding: 0;
 }
@@ -951,7 +965,7 @@ font-size: 2.5vh;
     height: 1.5vh;
     background: #FFAC00;
     border-radius: 50%;
-     
+
     margin-top: -0.55vh;
     /* Alineación vertical del thumb */
 }
@@ -961,7 +975,7 @@ font-size: 2.5vh;
     height: 1.5vh;
     background: #FFAC00;
     border-radius: 50%;
-     
+
 }
 
 /*GRID DIFICIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIL*/
@@ -985,7 +999,7 @@ font-size: 2.5vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1003,7 +1017,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1020,7 +1034,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1038,7 +1052,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1056,7 +1070,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1073,7 +1087,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1091,7 +1105,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1108,7 +1122,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1144,7 +1158,7 @@ font-size: 2vh;
 .dropdown-content a {
     color: white;
     z-index: 2;
-font-size: 3vh;
+    font-size: 3vh;
     text-decoration: none;
     display: block;
 }
@@ -1158,7 +1172,7 @@ font-size: 3vh;
     gap: 3.5vh;
 }
 
-.divMensajes{
+.divMensajes {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -1177,7 +1191,7 @@ font-size: 3vh;
     justify-content: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1196,7 +1210,7 @@ font-size: 2vh;
     align-items: center;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1216,7 +1230,7 @@ font-size: 2vh;
     align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1237,7 +1251,7 @@ font-size: 2vh;
     align-items: start;
     color: #FFF6E5;
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1255,7 +1269,7 @@ font-size: 2vh;
     align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1273,7 +1287,7 @@ font-size: 2vh;
     align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1294,12 +1308,12 @@ font-size: 2vh;
     align-items: start;
     color: #FFF6E5;
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
 
-.footer{
+.footer {
     margin-top: 7vh;
     margin-bottom: 7vh;
     color: #E6E5DD;
@@ -1309,10 +1323,10 @@ font-size: 2vh;
     font-family: messinaSB;
 }
 
-.insigniasText{
+.insigniasText {
     font-family: stratosSB;
     z-index: 2;
-font-size: 8vh;
+    font-size: 8vh;
     color: #fff6e5;
 }
 
@@ -1337,7 +1351,7 @@ font-size: 8vh;
     align-items: start;
     color: #efefeb;
     z-index: 2;
-font-size: 6vh;
+    font-size: 6vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
     font-family: stratos;
@@ -1385,7 +1399,7 @@ font-size: 6vh;
     align-items: start;
     color: #FFF6E5;
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1407,7 +1421,7 @@ font-size: 2vh;
     align-items: start;
     color: #FFF6E5;
     z-index: 2;
-font-size: 2vh;
+    font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
 }
@@ -1612,7 +1626,7 @@ font-size: 2vh;
     grid-column: span 3 / span 3;
     grid-row-start: 15;
 
-        overflow: hidden;
+    overflow: hidden;
     position: relative;
     border-radius: 3vh;
     padding: 2.5vh 4vh 2.5vh 2.5vh;
@@ -1632,8 +1646,8 @@ font-size: 2vh;
     grid-column: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 15;
-    
-        overflow: hidden;
+
+    overflow: hidden;
     position: relative;
     border-radius: 3vh;
     padding: 2.5vh 4vh 2.5vh 2.5vh;
@@ -1674,7 +1688,7 @@ font-size: 2vh;
     grid-column: span 6 / span 6;
     grid-row-start: 17;
 
-        overflow: hidden;
+    overflow: hidden;
     position: relative;
     height: 40vh;
     border-radius: 3vh;
@@ -1783,7 +1797,7 @@ font-size: 2vh;
     grid-row-start: 23;
 
     height: 10vh;
-    
+
     justify-content: center;
     align-items: center;
 }
@@ -1828,7 +1842,7 @@ font-size: 2vh;
     grid-column-start: 3;
     grid-row-start: 25;
 
-            overflow: hidden;
+    overflow: hidden;
     position: relative;
     border-radius: 3vh;
     padding: 2.5vh 4vh 2.5vh 2.5vh;
@@ -1895,7 +1909,7 @@ font-size: 2vh;
     grid-column: span 3 / span 3;
     grid-row-start: 28;
 
-        overflow: hidden;
+    overflow: hidden;
     position: relative;
     border-radius: 3vh;
     padding: 2.5vh 4vh 2.5vh 2.5vh;
@@ -1917,7 +1931,7 @@ font-size: 2vh;
     grid-column-start: 4;
     grid-row-start: 28;
 
-        overflow: hidden;
+    overflow: hidden;
     position: relative;
     border-radius: 3vh;
     padding: 2.5vh 4vh 2.5vh 2.5vh;
@@ -2006,7 +2020,7 @@ font-size: 2vh;
     justify-content: space-between;
     border: none;
     z-index: 2;
-font-size: 10vh;
+    font-size: 10vh;
     color: white;
     display: flex;
     justify-content: center;
@@ -2014,14 +2028,14 @@ font-size: 10vh;
     text-align: center;
 
     width: fit-content;
-    
+
     white-space: nowrap;
     overflow: hidden;
     display: flex;
     animation: slideLeft 15s linear infinite;
 }
 
-.nombreEt{
+.nombreEt {
     display: flex;
     flex-direction: column;
 }
@@ -2041,7 +2055,7 @@ font-size: 10vh;
     background-repeat: no-repeat;
 }
 
-.manita{
+.manita {
     margin-right: 1vh;
     height: 6vh;
     width: 6vh;
@@ -2055,29 +2069,29 @@ font-size: 10vh;
     background-image: url('img/manitasvg.svg');
 }
 
-#RBBBcelu{
+#RBBBcelu {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    .nombreEt{
+    .nombreEt {
         display: none;
     }
 
-    #language-selector{
+    #language-selector {
         display: none;
     }
 
-    .manita{
+    .manita {
         background-image: url('img/manita2svg.svg');
     }
 
-    .colombiaBtn{
+    .colombiaBtn {
         height: 2vh;
         width: 2vh;
         position: absolute;
         z-index: 2;
-font-size: 1.5vh;
+        font-size: 1.5vh;
         left: 65vw;
         top: 33vh;
         display: flex;
@@ -2093,8 +2107,8 @@ font-size: 1.5vh;
         color: #000000;
         transition: width 0.4s ease-in-out, color 1.1s ease-in;
     }
-    
-    .parent1{
+
+    .parent1 {
         width: 90vw;
     }
 
@@ -2106,20 +2120,20 @@ font-size: 1.5vh;
         display: none;
     }
 
-    
 
-    .RBBB{
+
+    .RBBB {
         grid-row-start: 3;
         width: 90vw;
     }
 
-    .insignias{
+    .insignias {
         grid-row-start: 4;
         width: calc(90vw - 5vh);
         height: fit-content;
     }
 
-    .QS{
+    .QS {
         display: flex;
         flex-wrap: wrap;
         z-index: 2;
@@ -2131,12 +2145,12 @@ font-size: 1.5vh;
         display: none;
     }
 
-    .QScelu{
+    .QScelu {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         z-index: 2;
-font-size: 3vh;
+        font-size: 3vh;
         gap: 0vh;
         height: fit-content;
         margin-bottom: 4vh;
@@ -2145,7 +2159,7 @@ font-size: 3vh;
         display: flex;
     }
 
-    .QShistoria{
+    .QShistoria {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
@@ -2160,7 +2174,7 @@ font-size: 3vh;
         display: flex;
     }
 
-    .QSintrospeccion{
+    .QSintrospeccion {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
@@ -2170,142 +2184,145 @@ font-size: 3vh;
         justify-content: center;
         height: fit-content;
         margin-bottom: 6vh;
-        width: 90vw;        display: none;
+        width: 90vw;
+        display: none;
         gap: 0vh;
         display: flex;
     }
 
-    .QSVeci{
+    .QSVeci {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         z-index: 2;
-font-size: 3vh;
+        font-size: 3vh;
         align-items: start;
         justify-content: center;
         height: fit-content;
         margin-bottom: 6vh;
-        width: 90vw;        display: none;
+        width: 90vw;
+        display: none;
         gap: 0vh;
         display: flex;
     }
 
-    .QSCreate{
+    .QSCreate {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         z-index: 2;
-font-size: 3vh;
+        font-size: 3vh;
         align-items: start;
         justify-content: center;
         height: fit-content;
         margin-bottom: 6vh;
-        width: 90vw;        display: none;
+        width: 90vw;
+        display: none;
         gap: 0vh;
         display: flex;
     }
 
-    .insideDiv{
+    .insideDiv {
         z-index: 2;
-font-size: 1.5vh;
+        font-size: 1.5vh;
     }
 
-    .insigniasText{
+    .insigniasText {
         z-index: 2;
-font-size: 5vh;
+        font-size: 5vh;
     }
 
 
 
-    .significado{
+    .significado {
         width: calc(90vw - 7.5vh);
         height: fit-content;
         z-index: 2;
-font-size: 2vh;
+        font-size: 2vh;
         padding: 5vh 5vh 5vh 2.5vh;
     }
-    
+
     @keyframes stretch1 {
-    0% {
-        width: 70vw;
+        0% {
+            width: 70vw;
+        }
+
+        30% {
+            width: 65vw;
+        }
+
+        50% {
+            width: 65vw;
+        }
+
+        80% {
+            width: 70vw;
+        }
+
+        100% {
+            width: 70vw;
+        }
     }
 
-    30% {
-        width: 65vw;
+    @keyframes stretch2 {
+        0% {
+            width: 65vw;
+        }
+
+        30% {
+            width: 55vw;
+        }
+
+        50% {
+            width: 55vw;
+        }
+
+        80% {
+            width: 65vw;
+        }
+
+        100% {
+            width: 65vw;
+        }
     }
 
-    50% {
-        width: 65vw;
+    @keyframes stretch3 {
+        0% {
+            width: 64vw;
+        }
+
+        30% {
+            width: 60vw;
+        }
+
+        50% {
+            width: 60vw;
+        }
+
+        80% {
+            width: 64vw;
+        }
+
+        100% {
+            width: 64vw;
+        }
     }
 
-    80% {
-        width: 70vw;
-    }
-
-    100% {
-        width: 70vw;
-    }
-}
-
-@keyframes stretch2 {
-    0% {
-        width: 65vw;
-    }
-
-    30% {
-        width: 55vw;
-    }
-
-    50% {
-        width: 55vw;
-    }
-
-    80% {
-        width: 65vw;
-    }
-
-    100% {
-        width: 65vw;
-    }
-}
-
-@keyframes stretch3 {
-    0% {
-        width: 64vw;
-    }
-
-    30% {
-        width: 60vw;
-    }
-
-    50% {
-        width: 60vw;
-    }
-
-    80% {
-        width: 64vw;
-    }
-
-    100% {
-        width: 64vw;
-    }
-}
-
-    .audio{
+    .audio {
         width: calc(90vw - 5vh);
     }
 
-    .panelCreo{
+    .panelCreo {
         padding: 2vh 2.5vh 0vh 2.5vh;
         width: calc(90vw - 5vh);
         height: 75vh;
         z-index: 2;
-font-size: 2vh;
+        font-size: 2vh;
     }
 
-    .WIAB{
+    .WIAB {
         z-index: 2;
-font-size: 5vh;
+        font-size: 5vh;
     }
 
     .gradientBGCREO {
@@ -2313,30 +2330,30 @@ font-size: 5vh;
         height: 100%;
     }
 
-    .textoPlanoUS{
+    .textoPlanoUS {
         width: 90vw;
         margin-bottom: 7vh;
         z-index: 2;
-font-size: 2vh;
+        font-size: 2vh;
     }
 
-    .textoPlanoDesc{
+    .textoPlanoDesc {
         z-index: 2;
-font-size: 2vh;
+        font-size: 2vh;
     }
 
-    .parent2{
+    .parent2 {
         width: 90vw;
     }
 
-    .div1{
+    .div1 {
         flex-direction: row;
         grid-row-start: 1;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }
 
-    .div2{
+    .div2 {
         align-items: center;
         text-align: center;
         grid-column: span 3 / span 3;
@@ -2346,7 +2363,7 @@ font-size: 2vh;
         height: fit-content;
     }
 
-    .div3{
+    .div3 {
         align-items: center;
         text-align: center;
         grid-column: span 3 / span 3;
@@ -2356,7 +2373,7 @@ font-size: 2vh;
         height: fit-content;
     }
 
-    .div4{
+    .div4 {
         grid-column: span 3 / span 3;
         flex-direction: row;
         grid-row-start: 7;
@@ -2364,7 +2381,7 @@ font-size: 2vh;
         height: fit-content;
     }
 
-    .div5{
+    .div5 {
         align-items: center;
         text-align: center;
         grid-column: span 3 / span 3;
@@ -2373,21 +2390,24 @@ font-size: 2vh;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }
-    .div6{
+
+    .div6 {
         grid-column: span 3 / span 3;
         flex-direction: row;
         grid-row-start: 3;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }
-    .div7{
+
+    .div7 {
         grid-column: span 3 / span 3;
         flex-direction: row;
         grid-row-start: 4;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }
-    .div8{
+
+    .div8 {
         grid-column: span 3 / span 3;
         flex-direction: row;
         grid-row-start: 9;
@@ -2395,57 +2415,62 @@ font-size: 2vh;
         height: fit-content;
     }
 
-    .stratosText{
+    .stratosText {
         z-index: 2;
-font-size: 3vh;
+        font-size: 3vh;
     }
 
-    .DescText{
+    .DescText {
         z-index: 2;
-font-size: 3vh;
+        font-size: 3vh;
     }
 
-    .branding{
+    .branding {
         width: 90vw;
     }
 
-    .b2{
+    .b2 {
         width: calc(45vw - 8.25vh);
-        height: 40vh;
-    }
-    .b3{
-        width: calc(45vw - 8.25vh);
-        height: 40vh;
-    }
-    .b4{
-        height: 40vh;
-    }
-    .b5{
-        height: 40vh;
-    }
-    .b6{
-        height: 40vh;
-    }
-    .b7{
         height: 40vh;
     }
 
-    .links2col{
+    .b3 {
+        width: calc(45vw - 8.25vh);
+        height: 40vh;
+    }
+
+    .b4 {
+        height: 40vh;
+    }
+
+    .b5 {
+        height: 40vh;
+    }
+
+    .b6 {
+        height: 40vh;
+    }
+
+    .b7 {
+        height: 40vh;
+    }
+
+    .links2col {
         gap: 6vh;
     }
 
-    .footerParent{
+    .footerParent {
         width: 90vw;
     }
 
-    .image-container{
+    .image-container {
         height: 70vh;
         background-attachment: scroll;
     }
 
-    .linksExt{
+    .linksExt {
         z-index: 2;
-font-size: 2vh;
+        font-size: 2vh;
     }
 
     .principalDiv::after {
@@ -2453,55 +2478,260 @@ font-size: 2vh;
         top: 65vh
     }
 
-    .principalDiv{
+    .principalDiv {
         margin-top: 65vh;
     }
 
-    .dropdown-content{
+    .dropdown-content {
         width: 80vw;
     }
 
-    .nebdes{
+    .nebdes {
         z-index: 2;
-font-size: 2vh;
+        font-size: 2vh;
     }
 
-    .contactame{
+    .contactame {
         z-index: 2;
-font-size: 1.5vh;
+        font-size: 1.5vh;
     }
 
-    .navbar{
+    .navbar {
         padding-top: 3vh;
     }
 
-    .meanings{
+    .meanings {
         gap: 2vh;
     }
 
-    .insignias{
+    .insignias {
         z-index: 2;
-font-size: 2vh
+        font-size: 2vh
     }
 
-    .parasentirte{
+    .parasentirte {
         margin-top: 4vh;
         z-index: 2;
-font-size: 2vh
+        font-size: 2vh
     }
 
-    .minimenu{
+    .minimenu {
         backdrop-filter: blur(1vh);
         -webkit-backdrop-filter: blur(1vh);
     }
 
-    .btnArroba{
+    .btnArroba {
         backdrop-filter: blur(1vh);
         -webkit-backdrop-filter: blur(1vh);
     }
 
-    .lucecita{
+    .lucecita {
         background-color: #ebebeb;
         box-shadow: 0px 0px 5vh 2vh #ffffff9a;
     }
+
+    .title {
+        font-size: 4vh;
+    }
+
+    .titleAB {
+        font-size: 2.5vh;
+    }
+
+    .parentPR {
+        width: 90vw;
+    }
+
+    .pryct2 {
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .pryct4 {
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct5 {
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct6 {
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct7 {
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct8 {
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct9 {
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct10 {
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct11 {
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct14{
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .pryct15{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct16{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct18{
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .pryct20{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+    .pryct21{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+    .pryct22{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+    .pryct23{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct24{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+    .pryct25{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+    .pryct26{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct28{
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .pryct30{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct31{
+        font-size: 1.5vh;
+        height: 25vh;
+    }
+
+    .pryct33{
+        text-align: center;
+            font-size: 4vh;
+    }
+
+    .pryct34{
+        display: none;
+    }
+
+    .pryct35 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 4;
+        grid-row-start: 24;
+        height: 30vh;
+    }
+
+    .pryct36{
+        display: none;
+    }
+
+    .pryct37{
+        grid-column: span 6 / span 6;
+        font-size: 1.5vh;
+        height: 25vh;
+
+        justify-content: space-between;
+    }
+
+    .pryct39{
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .pryct41{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct42{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct43{
+        justify-content: end;
+        font-size: 2.5vh;
+        height: 10vh;
+    }
+
+    .pryct45{
+        grid-column: span 6 / span 6;
+        font-size: 1.5vh;
+        height: 25vh;
+
+        justify-content: space-between;
+    }
+
+    #celutitle{
+        display: flex;
+    }
+
+    #inners{
+        display: none;
+    }
+
+    [class^="pryct"] {
+        border-radius: 2vh;
+        padding: 2.5vh 2.5vh 2.5vh 2.5vh;
+    }
+
 }

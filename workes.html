@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/manitafavicon.png" type="image/png">
+    <script type="module" src="script.js"></script>
+
+    <title>Porfolio | Juan Pablo Ardila</title>
+
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="img/manitafavicon.png" as="image" type="image/png">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="img/JPAuwide.jpg" as="image">
+    <link rel="preload" href="img/manita.png" as="image">
+    <link rel="preload" href="img/manitasvg.svg" as="image">
+    <link rel="preload" href="img/flechita.png" as="image">
+    <link rel="preload" href="img/coflag.png" as="image">
+    <link rel="preload" href="img/enflag.png" as="image">
+    <link rel="preload" href="img/flechitaLateral.png" as="image">
+    <link rel="preload" href="img/NUVO.png" as="image">
+    <link rel="preload" href="img/nuvo2.png" as="image">
+    <link rel="preload" href="img/coflagemoji.png" as="image">
+    <link rel="preload" href="img/mxflagemoji.png" as="image">
+    <link rel="preload" href="img/colombia.png" as="image">
+    <link rel="preload" href="img/framenoise.png" as="image">
+    <link rel="preload" href="img/arroba.svg" as="image">
+    <link rel="preload" href="img/CASG.png" as="image">
+    <link rel="preload" href="img/playbutton.png" as="image">
+
+
+    <link rel="preload" href="fonts/futura.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/futuraB.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/messinasemibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/neueM.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/stratosSB.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.typekit.net/hnn0vlc.css">
+
+
+</head>
+<body>
+
+    <div class="principalDivW">
+        
+        <div class="navbar">
+            <div class="etiqueta">
+                <img onclick="window.location.href='index.html'" class="manita" src="img/transparent.png" alt="">
+                <div class="nombreEt">
+                    <p style="font-family: futuraB; font-size: 2vh; color: white;"> Juan Pablo Ardila
+                    </p>
+                    <p
+                        style="font-family: futura-pt; font-size: 1.7vh; color: white; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;" alt="">Quiubo
+                        parce! / Hola, Hellooo
+                    </p>
+                </div>
+            </div>
+        
+            <div class="minimenu">
+                <div id="optionSel" style="transform: translateX(100%);" class="optionSel">
+                    <div class="lucecita"></div>
+                </div>
+                <div onclick="irA('A')" class="optionsA">About</div>
+                <div onclick="irA('T')" class="optionsT">Work</div>
+            </div>
+        
+            <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
+                <button onclick="openMenu()" class="btnArroba">
+                    <img id="imgArroba" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute"
+                        src="img/arroba.svg" alt="">
+                    <img id="imgClose"
+                        style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute; opacity: 0;"
+                        src="img/close.svg" alt="">
+                </button>
+        
+                <div id="dropdownMenu" class="dropdown-content">
+        
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: start; gap: 2vh;">
+        
+                        <div
+                            style="display: flex; justify-content: center; align-items: center; position: relative; top: 1vh; width: 7vh; height: 7vh; border-radius: 1vh; background-image: url(img/gradient3.png);">
+                            <img class="gradientBG" src="img/blur.png" style="top: -40%; left: -40%; width: 180%; height: 180%;"
+                                alt="">
+                            <img src="img/emoji.svg" style="width: 70%; height: auto;" alt="">
+                        </div>
+        
+                        <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN
+                                PABLO ARDILA</p>
+                            <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
+                                @juan.ardilasf
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                    <div
+                        style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <p class="contactame">CONTACT</p>
+                        <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
+        
+                        <div
+                            style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <button onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                LINKEDIN
+                            </button>
+                            <button onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                INSTAGRAM
+                            </button>
+                            <button onclick="window.open('https://www.behance.net/juanpardila')"
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                BEHANCE
+                            </button>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div id="language-selector">
+                    <div id="selected-language">
+                        <img src="img/coflag.png" id="language-flag" class="flag-icon">
+                    </div>
+                    <select id="language" onchange="updateLanguageFlag(this)">
+                        <option value="es" data-flag="img/coflag.png">Español</option>
+                        <option value="en" data-flag="img/enflag.png">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="QS" style=" height: fit-content; margin: unset; margin-top: 20vh; ">
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">SIGA</p>
+            <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">VECI</p>
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">BIEN</p>
+            <p>PUEDA</p>
+            <p style="padding-top: 3vh; font-family: messinaSB; color: #E6E5DD; font-size: 1.7vh;">[BE·SI·NO]</p>
+        </div>
+
+        <div
+            style="padding-bottom: 7vh; cursor: pointer; gap: 1vh; height: 2.7vh; flex-direction: row; display: flex; justify-content: center; align-items: center;">
+            <p onclick="window.open('https://www.behance.net/juanpardila')" class="textoPlano"
+                style="margin: 0px; font-family: neueM; font-size: 2.2vh; width: fit-content; text-align: center;">BEHANCE</p>
+            <img src="img/flechita.png" style="height: 1.1vh;" alt="">
+        </div>
+
+        <div class="parentPR">
+            <div class="pryct1">01</div>
+            <div class="pryct2" style="gap: 0;">
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
+                <p style="margin: 0; padding: 0;">UX UI DESIGN</p>
+                <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
+            </div>
+            <div class="pryct3"></div>
+            <div class="pryct4">
+                <img class="gradientBG" src="img/NUVO.png" style="top: 0; left: 0; z-index: -1; width: fit-content; min-height: 100%; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+
+                <div style="width: 100%; display: flex; justify-content: space-between;">
+                    <p>GROCERIES EVOLVED</p>
+                    <p>UX UI 001</p>
+                </div>
+                
+                <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                    <p>UX UI SELECTED WORK</p>
+                    <p style="font-family: stratosSB; font-size: 7vh;">NUVO</p>
+                </div>
+            </div>
+            <div class="pryct5">
+                <img class="gradientBG" src="img/nuvo2.png" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                
+                <div style="width: 100%; display: flex; justify-content: space-between;">
+                    <p>BUILSPACE</p>
+                    <p>UX UI 001</p>
+                </div>
+                
+                <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                    <p>UX UI SELECTED WORK</p>
+                    <p style="font-family: stratosSB; font-size: 7vh;">REBL</p>
+                </div>
+            </div>
+            <div class="pryct6">
+                <p style="font-family: stratosSB; font-size: 7vh;">LE REVE</p>
+                <img class="gradientBG" src="img/lereve.png" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+            </div>
+            <div class="pryct7">
+                <p style="font-family: stratosSB; font-size: 7vh;">BE</p>
+                <img class="gradientBG" src="img/coverbe.png" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+            </div>
+            <div class="pryct8">8</div>
+            <div class="pryct9">9</div>
+            <div class="pryct10">10</div>
+            <div class="pryct11">11</div>
+            <div class="pryct12">12</div>
+            <div class="pryct13">13</div>
+            <div class="pryct14">14</div>
+            <div class="pryct15">15</div>
+            <div class="pryct16">16</div>
+            <div class="pryct17">17</div>
+            <div class="pryct18">18</div>
+            <div class="pryct19">19</div>
+            <div class="pryct20">20</div>
+            <div class="pryct21">21</div>
+            <div class="pryct22">22</div>
+            <div class="pryct23">23</div>
+            <div class="pryct24">24</div>
+            <div class="pryct25">25</div>
+            <div class="pryct26">26</div>
+            <div class="pryct27">27</div>
+            <div class="pryct28">28</div>
+            <div class="pryct29">29</div>
+            <div class="pryct30">30</div>
+            <div class="pryct31">31</div>
+            <div class="pryct32">32</div>
+            <div class="pryct33">33</div>
+            <div class="pryct34">34</div>
+            <div class="pryct35">35</div>
+            <div class="pryct36">36</div>
+            <div class="pryct37">37</div>
+            <div class="pryct38">38</div>
+            <div class="pryct39">39</div>
+            <div class="pryct40">40</div>
+            <div class="pryct41">41</div>
+            <div class="pryct42">42</div>
+            <div class="pryct43">43</div>
+            <div class="pryct44">44</div>
+        </div>
+
+        <footer style="width: 70%;">
+            <hr style="border: none; border-bottom: 0.1vh dashed #333;">
+            <div class="footer">
+                <div>
+                    <p style="font-size: 1.7vh; color: #8d8d8d;">¿TIENES</p>
+                    <p style="font-family: stratosSB; font-size: 6vh; color: #FFF6E5;">ALGUNA IDEA EN MENTE?</p>
+                    <p style="font-family: futura; font-size: 2.3vh; color: #FFF6E5;">Si es así, siéntete libre de contactarme, juntos <strong>la sacamos del estadio</strong></p>
+                </div>
+
+                <div style="display: flex; flex-direction: row; gap: 50%;">
+                    <div style="display: flex; flex-direction: column; gap: 2vh;">
+                        <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">EXPLORAR</p>
+                        <div style="font-family: futura; font-size: 2.6vh;">TRABAJO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div style="font-family: futura; font-size: 2.6vh;">CONTACTO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div style="font-family: futura; font-size: 2.6vh;">INSPIRACION <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 2vh;">
+                        <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">HERRAMIENTAS CREATIVAS</p>
+                        <div style="font-family: futura; font-size: 2.6vh;">RECURSOS <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p onclick="window.location.href='index.html'" style="cursor: pointer; font-size: 2vh;"><span style="color: #707070;">DESIGN</span> <img src="img/coflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">JUAN PABLO ARDILA</span></p>
+                    <p onclick="window.open('https://github.com/Y4ELX')" style="cursor: pointer; font-size: 2vh;"><span style="color: #707070;">DEV</span> <img src="img/mxflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">YAEL MONTERRUBIO</span></p>
+                </div>
+
+                <div>
+                    <p class="textoPlano" style="font-size: 2.3vh;">© 2024 Juan Pablo Ardila. All Rights Reserved.</p>
+                    <p style="font-family: neueM; color: #707070; font-size: 2.3vh;">Made with a lot of tintos and good company</p>
+                </div>
+                
+                <p style="color: #707070; font-family: neueM; font-size: 2.3vh; ">Last updated by Juan on August 07, 2024, 12:07 PM EST</p>
+
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script>
+    function irA(seccion) {
+            const optionSel = document.getElementById("optionSel")
+
+            switch (seccion) {
+                case 'A':
+                    optionSel.style.transform = "translateX(0)";
+                    setTimeout(() => {
+                        window.location.href = "indexes.html";
+                    }, 300);
+                    break;
+                case 'T':
+                    optionSel.style.transform = "translateX(100%)";
+                    setTimeout(() => {
+                        window.location.href = "workes.html";
+                    }, 300);
+                    break;
+            }
+        }
+</script>
+
+<script>
+    function updateLanguageFlag(selectElement) {
+        const selectedOption = selectElement.options[selectElement.selectedIndex];
+        const selectedFlag = selectedOption.getAttribute('data-flag');
+
+        // Actualiza la imagen de la bandera en el div visible
+        const languageFlag = document.getElementById('language-flag');
+        languageFlag.src = selectedFlag;
+        languageFlag.alt = selectedOption.textContent.trim();
+    }
+</script>
+
+<script>
+
+    function openMenu() {
+        var menu = document.getElementById("dropdownMenu");
+        if (menu.style.display === "none" || menu.style.display === "") {
+            menu.style.display = "flex";
+            setTimeout(() => {
+                menu.style.transform = "scale(1)"
+            }, 100);
+        } else {
+            menu.style.transform = "scale(0.1)"
+            setTimeout(() => {
+                menu.style.display = "none";
+            }, 100);
+        }
+    }
+
+    // Cerrar el menú si se hace clic fuera de él
+    window.onclick = function (event) {
+        if (!event.target.matches('.btnArroba')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+
+</script>
+
+</html>

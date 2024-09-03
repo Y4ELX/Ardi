@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/manitafavicon.png" type="image/png">
+    <script type="module" src="script.js"></script>
+
+    <title>Porfolio | Juan Pablo Ardila</title>
+
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="img/manitafavicon.png" as="image" type="image/png">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="img/JPAuwide.jpg" as="image">
+    <link rel="preload" href="img/manita.png" as="image">
+    <link rel="preload" href="img/manitasvg.svg" as="image">
+    <link rel="preload" href="img/flechita.png" as="image">
+    <link rel="preload" href="img/coflag.png" as="image">
+    <link rel="preload" href="img/enflag.png" as="image">
+    <link rel="preload" href="img/flechitaLateral.png" as="image">
+    <link rel="preload" href="img/NUVO.png" as="image">
+    <link rel="preload" href="img/nuvo2.png" as="image">
+    <link rel="preload" href="img/coflagemoji.png" as="image">
+    <link rel="preload" href="img/mxflagemoji.png" as="image">
+    <link rel="preload" href="img/colombia.png" as="image">
+    <link rel="preload" href="img/framenoise.png" as="image">
+    <link rel="preload" href="img/arroba.svg" as="image">
+    <link rel="preload" href="img/CASG.png" as="image">
+    <link rel="preload" href="img/playbutton.png" as="image">
+
+
+    <link rel="preload" href="fonts/futura.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/futuraB.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/messinasemibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/neueM.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/stratosSB.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.typekit.net/hnn0vlc.css">
+
+
+</head>
+<body>
+    
+    <button class="colombiaBtn">De Colombia, para el mundo</button>
+    <div class="image-container"></div>
+
+    <div class="principalDiv">
+        
+        <div class="navbar">
+            <div class="etiqueta">
+                <img onclick="window.location.href='index.html'" class="manita" src="img/transparent.png" alt="">
+                <div class="nombreEt">
+                    <p style="font-family: futuraB; font-size: 2vh; color: white;"> Juan Pablo Ardila
+                    </p>
+                    <p
+                        style="font-family: futura-pt; font-size: 1.7vh; color: white; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;" alt="">Quiubo parce!
+                        / Hola, Hellooo
+                    </p>
+                </div>
+            </div>
+        
+            <div class="minimenu">
+                <div id="optionSel" class="optionSel">
+                    <div class="lucecita"></div>
+                </div>
+                <div onclick="irA('A')" class="optionsA">Acerca de</div>
+                <div onclick="irA('T')" class="optionsT">Trabajo</div>
+            </div>
+        
+            <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
+                <button onclick="openMenu()" class="btnArroba">
+                    <img id="imgArroba" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute" src="img/arroba.svg" alt="">
+                    <img id="imgClose" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute; opacity: 0;" src="img/close.svg" alt="">
+                </button>
+
+                <div id="dropdownMenu" class="dropdown-content">
+
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: start; gap: 2vh;">
+
+                        <div style="display: flex; justify-content: center; align-items: center; position: relative; top: 1vh; width: 7vh; height: 7vh; border-radius: 1vh; background-image: url(img/gradient3.png);">
+                            <img class="gradientBG" src="img/blur.png" style="top: -40%; left: -40%; width: 180%; height: 180%;" alt="">
+                            <img src="img/emoji.svg" style="width: 70%; height: auto;" alt="">
+                        </div>
+                    
+                        <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN PABLO ARDILA</p>
+                            <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
+                                @juan.ardilasf
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <p class="contactame">CONTACTO</p>
+                        <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
+                    
+                        <div style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <button onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                LINKEDIN
+                            </button>
+                            <button onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                INSTAGRAM
+                            </button>
+                            <button onclick="window.open('https://www.behance.net/juanpardila')"
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                BEHANCE
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="language-selector">
+                    <div id="selected-language">
+                        <img src="img/coflag.png" id="language-flag" class="flag-icon">
+                    </div>
+                    <select id="language" onchange="updateLanguageFlag(this)">
+                        <option value="es" data-flag="img/coflag.png">Español</option>
+                        <option value="en" data-flag="img/enflag.png">English</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+
+        
+        <div class="QS">
+            <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">¿QUIÉN SOY?</p>
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">POR</p>
+            <p>DICCIONARIO ROLO</p>
+        </div>
+        
+        <div class="QScelu">
+            <div style="height: fit-content; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: baseline;">
+                <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">¿QUIÉN SOY?</p>
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 1.7vh;">POR</p>
+            </div>
+            <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                <p style="font-size: 7vh; height: 7vh;">DICCIONARIO</p>
+                <p style="font-size: 7vh; color: #a2a2a2; text-align: end; width: 100%; height: 7vh;">ROLO</p>
+            </div>
+        </div>
+
+        <div class="parent1">
+
+            <div id="RBBB" class="RBBB">
+                <div class="insideDiv">
+                    REMEMBER, [BECOMING IS BETTER THAN BEING]
+                    <img src="img/ojos.png" style="width: 10vh;" alt="">
+                </div>
+            </div>
+        
+            <div class="significado">
+                <p style="font-family: messinaSB; font-size: 2vh;">SUSTANTIVO</p>
+                <div style="display: flex; flex-direction: row; justify-content: end; align-items: end;">
+                    <p class="insigniasText"">JUAN</p>
+                    <p style="font-size: 2.5vh; color: #fff6e5; font-family: futuraB;">[huan]</p>
+                </div>
+
+                <!--Meanings-->
+                <div class="meanings">
+                    <p><span style="font-family: stratosSB; white-space: pre;">[1] </span>Diseñador industrial javeriano</p>
+                    <p><span style="font-family: stratosSB; white-space: pre;">[2] </span>Deportista de alto rendimiento</p>
+                    <div style="display: flex; flex-direction: row;"><div style="height: 100%; font-family: stratosSB; white-space: pre;">[3] </div>Ser aventurero, inquieto, rebelde,
+                        determinado, disciplinado, curioso, soñador, un ser maravilloso (definición de mamá)</div>
+                </div>
+            </div>
+
+            <div id="RBBBcelu" class="RBBB">
+                <div class="insideDiv">
+                    REMEMBER, [BECOMING IS BETTER THAN BEING]
+                    <img src="img/ojos.png" style="width: 10vh;" alt="">
+                </div>
+            </div>
+        
+            <div class="insignias">
+                <img class="gradientBG" src="img/gradient.png" alt="">
+        
+                <p style="font-family: messinaSB; font-size: 2vh;">PROCESO</p>
+                <p class="insigniasText"">INSIGNIAS</p>
+        
+                <!--Meanings-->
+                <div style="display: flex; flex-direction: column; padding-top: 4vh; margin-bottom: 4vh;">
+                    <p>Estas medallas destacan mis habilidades en diseño, innovación y creatividad. Representan logros en cada
+                        proyecto, demostrando mi capacidad para crear, innovar y sorprender.</p>
+                </div>
+        
+                <div style="display: flex; flex-direction: column; gap: 3vh;">
+                    <div class="inisgniaRounded" style="animation: stretch1 6s infinite ease-in-out;">
+                        <img class="spin" src="img/estrella.png" style="position: absolute; left: 2vh; height: 6vh; width: 6vh;" alt="">
+                        <p class="insigniasText">HARD WORK</p>
+                    </div>
+        
+                    <div class="inisgniaRounded" style="animation: stretch2 7s infinite ease-in-out;">
+                        <img class="rotate3D" src="img/mundo.png" style="position: absolute; left: 2vh; height: 6vh; width: 6vh;" alt="">
+                        <p class="insigniasText">STRATEGY</p>
+                    </div>
+        
+                    <div class="inisgniaRounded" style="animation: stretch3 5s infinite ease-in-out;">
+                        <img class="circle" src="img/circulito.png" style="position: absolute; left: 2vh; height: 6vh; width: 6vh;" alt="">
+                        <p class="insigniasText">CREATIVITY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="QS" style="flex-direction: column; margin-bottom: 5vh;">
+            <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">¿CUÁL ES MI HISTORIA?</p>
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">POR TU</p>
+            <p>NARRADOR DE CONFIANZA</p>
+        </div>
+
+        <div class="QShistoria">
+            <div style="height: fit-content; line-height: 1; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: baseline;">
+                <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">¿CUÁL ES MI HISTORIA?</p>
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">POR</p>
+            </div>
+            
+            <div style="height: 7vh; line-height: 0; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: center;">
+                <p style="width: 15vw; font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">TU</p>
+                <p style="font-size: 7vh;">NARRADOR</p>
+            </div>
+        
+            <div
+                style="height: 7vh; line-height: 0; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: center;">
+                <p style="width: 15vw; font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">DE</p>
+                <p style="font-size: 7vh;">CONFIANZA</p>
+            </div>
+        </div>
+        
+        <div class="audio">
+            <p style="font-family: messinaSB; font-size: 2vh;">AUDIO</p>
+            <div style="display: flex; flex-direction: row; justify-content: end; align-items: end;">
+                <p class="WIAB">DONDE TODO EMPEZÓ</p>
+            </div>
+        
+            <div style="display: flex; flex-direction: row; gap: 2vh; font-size: 2.5vh;">
+                <p onclick="changelang('ESP')" id="ESP" style="cursor: pointer; text-decoration: underline;">ESP</p>
+                <p onclick="changelang('ENG')" id="ENG" style="cursor: pointer;">ENG</p>
+            </div>
+        
+            <audio id="audio" src="img/audio.mp3"></audio>
+        
+            <div class="audio-player">
+                <div
+                    style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 2vh;">
+                    <button id="playPauseBtn" class="playPauseBtn"></button>
+                    <input class="range" type="range" id="seekSlider" value="0" max="100">
+                </div>
+                <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; font-size: 2.5vh;">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+        
+            <p class="parasentirte">
+                Para sentirte como en casa, te recomiendo que al escuchar la siguiente historia te prepares una taza de tinto
+                (alias café)
+                <br><br>
+                <img src="img/simb.svg" style="height: 2vh;" alt="">
+                <br><br>
+            </p>
+        </div>
+        
+        <div class="QS" style="margin-bottom: 5vh; height: fit-content; flex-direction: column; gap: 0;">
+            <div style="width: 100%; display: flex; flex-direction: row; align-items: center; gap: 1vh;">
+                <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">¿EN QUÉ CREO?</p>
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">MI</p>
+                <p>INTROSPECCIÓN</p>
+            </div>
+
+            <div style="width: 100%; display: flex; flex-direction: row; justify-content: end; align-items: center; gap: 1vh;">
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh; ">Y</p>
+                <p>MENTALIDAD</p>
+            </div>
+        <div>
+
+            </div>
+        </div>
+
+        <div class="QSintrospeccion">
+            <div style="height: fit-content; line-height: 1; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: baseline;">
+                <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">¿EN QUÉ CREO?</p>
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">MI</p>
+            </div>
+            
+            <div
+                style="height: 7vh; line-height: 0; display: flex; flex-direction: row; justify-content: start; align-items: center;">
+                <p style="font-size: 6vh;">INTROSPECCIÓN</p>
+            </div>
+            
+            <div style="width: 85vw; height: 7vh; line-height: 0; display: flex; flex-direction: row; justify-content: end; align-items: center;">
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">Y</p>
+                <p style="font-size: 6vh;">MENTALIDAD</p>
+            </div>
+        </div>
+        
+        <div class="panelCreo">
+            <img class="gradientBGCREO" style="overflow: hidden;" src="img/CASG.png" alt="">
+
+            <p style="z-index: 1;">            ... Creo que el diseño es el combustible que usa el corazón para marcar una diferencia en el mundo, para dejar
+            huella: Un puente que nos conecta a los más profundos sentimientos de nuestra imaginación, a las experiencias más
+            memorables, a las emociones y sensaciones más intensas. Un puente al que podemos acceder únicamente con nuestro
+            cuerpo, y con nuestra mente, en donde está nuestro espíritu ...</p>
+
+        </div>
+        
+        <div class="QS">
+            <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">CREAR, ESCUCHANDO</p>
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">MI</p>
+            <p>LLAMADO</p>
+        </div>
+
+        <div class="QSCreate">
+            <div style="height: fit-content; line-height: 1; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: baseline;">
+                <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77); font-size: 2.4vh;">¿CÓMO HAGO LO QUÉ HAGO?</p>
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">CREAR</p>
+            </div>
+
+            <div style="height: 7vh; line-height: 0; width: 70vw; display: flex; flex-direction: row; justify-content: start; align-items: center;">
+                <p style="font-size: 7vh;">ESCUCHANDO</p>
+                <p style="width: 15vw; font-family: messinaSB; color: #E6E5DD; font-size: 1.5vh;">MI</p>
+            </div>
+
+            <div style="height: 7vh; line-height: 0; width: 100%; display: flex; flex-direction: row; justify-content: end; align-items: center;">
+                <p style="font-size: 7vh;">LLAMADO</p>
+            </div>
+        </div>
+        
+        <p class="textoPlanoUS">Un soñador fanático
+            de mejorar el mundo. A partir de mi experiencia y desde la perspectiva de quienes me conocen, y saben como hago lo
+            que hago, como equipos de trabajo, compañeros de universidad, amigos, profesores, clientes y familia, he reunido
+            unas cuantas características que me identifican, como persona, y como profesional.</p>
+        
+        <div class="parent2">
+            <div class="div1">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/43cac4d9-4c82-42ce-98c6-bfaf6e400442/RLyqjj1QLu.json"></iframe>
+                <div>
+                    <p class="DescText">SOY HONESTO</p>
+                    <p class="textoPlanoDesc">Vivo bajo la premisa de: ”Hacer las cosas bien porque está bien”
+                    </p>
+                </div>
+            </div>
+            <div class="div2">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/fbf6653f-ea77-4d7c-b2e2-4b288863dff1/dpHfsn3ogL.json"></iframe>
+                    <p class="DescText">TE ASEGURO LA CALIDAD</p>
+                    <p class="textoPlanoDesc">La idea es que ambos estemos 100% satisfechos, tanto en el
+                        proceso, y en el resultado, cuidando cada detalle</p>
+            </div>
+            <div class="div3">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/4a4002f7-abb3-45fe-8da7-2d57b6684704/SoafARVnXM.json"></iframe>
+                    <p class="DescText">SOY UN PURISTA DE LA ESTÉTICA</p>
+                    <p class="textoPlanoDesc">“Si hubiese sido médico, apostamos por un excelente cirujano
+                        plástico”</p>
+            </div>
+            <div class="div4">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/0eefa098-bb6f-4bc8-976e-4ca1a3a2d977/DeeVfqZpU2.json"></iframe>
+                <div>
+                    <p class="DescText">ME APASIONA LA ARMONÍA NATURAL</p>
+                    <p class="textoPlanoDesc">Me inspiro en la naturaleza y en su funcionamiento (perfecta en
+                        todo sentido)</p>
+                </div>
+            </div>
+            <div class="div5">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/a779b063-14f5-4167-98b5-d8aa74df6003/8UK4nQtgHs.json"></iframe>
+                    <p class="DescText">SOY MINIMALISTA</p>
+                    <p class="textoPlanoDesc">La idea es que ambos estemos 100% satisfechos, tanto en el proceso, y en el resultado, cuidando cada detalle</p>
+            </div>
+            <div class="div6">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/16e6ef46-fbbb-490f-8ea3-89579ab7b422/lLv2hgpLDg.json"></iframe>
+                <div>
+                    <p class="DescText">SÉ MEDIAR</p>
+                    <p class="textoPlanoDesc">Conmigo la comunicación es easy, pregunto, escucho y hablo
+                        fresqueado</p>
+                </div>
+            </div>
+            <div class="div7">
+                <iframe style="height: 12vh; width: 12vh; border: none;"
+                    src="https://lottie.host/embed/a2e846d4-4eec-404b-8211-0e1f0dec0111/czNl87K7c0.json"></iframe>
+                <div>
+                    <p class="DescText">UN JUGADOR DE EQUIPO</p>
+                    <p class="textoPlanoDesc">Actitud de equipo, siempre dispuesto a sumar y respaldar, juntos
+                        la damos</p>
+                </div>
+            </div>
+            <div class="div8">
+                <img src="img/cohete.svg" style="width: fit-content; height: 8vh;" alt="">
+                <div>
+                    <p class="DescText">Y ... ¡QUE CHIMBA!</p>
+                    <p class="textoPlanoDesc">El sentimiento que persiste con cada cosa que hago</p>
+                </div>
+            </div>
+        </div>
+        
+        <p class="QS"
+            style=" margin: unset; filter: drop-shadow(0px 0px 2vh #e6e5dd77); font-size: 4.5vh; padding-top: 17vh; height: fit-content;">
+            Y CÓMO DECIMOS EN LAS CALLES DE LA CAPITAL
+        </p>
+        <div class="QS" style="height: fit-content; margin: unset; padding-bottom: 7vh;">
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">SIGA</p>
+            <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">VECI</p>
+            <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">BIEN</p>
+            <p>PUEDA</p>
+            <p style="padding-top: 3vh; font-family: messinaSB; color: #E6E5DD; font-size: 1.7vh;">[BE·SI·NO]
+
+            </p>
+        </div>
+
+        <p class="QSVeci"
+            style=" margin: unset; filter: drop-shadow(0px 0px 2vh #e6e5dd77); font-size: 2.5vh; padding-top: 17vh; height: fit-content;">
+            Y CÓMO DECIMOS EN LAS CALLES DE LA CAPITAL</p>
+        <div class="QSVeci" style="height: fit-content;margin: unset;padding-bottom: 7vh;justify-content: center;align-items: center;">
+            <div style="height: 7vh; line-height: 0; display: flex; flex-direction: row; justify-content: start; align-items: start;">
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh; height: 2.5vh; display: flex; justify-content: center; align-items: center; margin-top: 1vh;">SIGA</p>
+                <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77); font-size: 7vh; height: 7vh; display: flex; justify-content: center; align-items: center;">VECI</p>
+                <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh; height: 2.5vh; display: flex; justify-content: center; align-items: center; margin-top: 1vh;">BIEN</p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <p style="font-size: 7vh; height: 7vh; display: flex; justify-content: center; align-items: center;">PUEDA</p>
+                <p style="padding-top: 3vh; font-family: messinaSB; color: #E6E5DD; font-size: 1.7vh;">[BE·SI·NO]</p>
+            </div>
+        </div>
+        
+        <p class="textoPlanoUS">Lo que estas por ver
+            es un salto hacia lo que me gusta, en lo que soy bueno, en lo que creo, en lo que hago, pero sobre todo, en este
+            punto ya te habrás dado cuenta el por qué lo hago. Como decimos en las calles de la capital, “siga veci bien pueda”,
+            siéntete en casa experimentando las creaciones de este jóven rebelde, soñador y aventurero.</p>
+        
+        <div
+            style="cursor: pointer; gap: 1vh; height: 2.7vh; flex-direction: row; display: flex; justify-content: center; align-items: center;">
+            <p onclick="window.open('https://www.behance.net/juanpardila')" class="textoPlano"
+                style="margin: 0px; font-family: neueM; font-size: 2.2vh; width: fit-content; text-align: center;">BEHANCE</p>
+            <img src="img/flechita.png" style="height: 1.1vh;" alt="">
+        </div>
+
+        <div class="branding">
+            <div class="b1">
+                <img class="gradientBG" src="img/gradient2.png" style="top: -30%; left: -5%; z-index: -1; width: 109%; height: 160%;" alt=""> 
+                
+                <div class="divMensajes">
+                    <div class="mensajes">
+                        BRANDING - UX UI - 3D PRODUCTS
+                    </div>
+                </div>
+
+            </div>
+            <div class="b2">
+                <p class="messinaText">STARRING</p>
+                <p class="stratosText">SELECTED WORK</p>
+                <p class="textoPlanoAcurated">A curated selection from our collected works encompassing evocative film scores to iconic sonic identities.</p>
+            </div>
+            <div class="b3">
+                <img class="gradientBGCREO" style="z-index: -1;" src="img/imgLT.png"  alt="">
+            </div>
+            <div class="b4">
+                <img class="gradientBGCREO" style="z-index: -1;" src="img/guantes.png"  alt="">
+                
+                <div style="width: 100%; display: flex; justify-content: space-between;">
+                    <p>THE SURGEON</p>
+                    <p>ID 001</p>
+                </div>
+
+                <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                    <p >BRANDING</p>
+                    <p style="font-family: stratosSB; font-size: 5vh;">DR. SEBASTIÁN MERCHÁN</p>
+                </div>
+                
+            </div>
+            <div class="b5"></div>
+            <div class="b6"></div>
+            
+            <div class="b7">
+                <img class="gradientBGCREO" style="z-index: -1;" src="img/bag.png"  alt="">
+
+            
+                <div style="width: 100%; display: flex; justify-content: space-between;">
+                    <p>PERSONAL MAKEUP</p>
+                    <p>BR 002</p>
+                </div>
+            
+                <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                    <p>BRANDING</p>
+                    <p style="font-family: stratosSB; font-size: 5vh;">BEHLIA</p>
+                </div>
+            
+            </div>
+        </div>
+
+        <div style="margin-top: 10vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2vh; margin-bottom: 50vh;">
+            <div style="display: flex; flex-direction: row; gap: 2vh; justify-content: center; align-items: center;">
+                <img src="img/flechita.png" style="height: 1vh;" alt="">
+                <p class="messinaText" style="color: #CCCBC4; font-size: 2vh;">TAKE A LOOK AT ALL MY WORK</p>
+            </div>
+            <img src="img/line.png" style="width: 17vh;" alt="">
+        </div>
+
+
+        <footer class="footerParent">
+            <hr style="border: none; border-bottom: 0.1vh dashed #333;">
+            <div class="footer">
+                <div>
+                    <p style="font-size: 1.7vh; color: #8d8d8d;">¿TIENES</p>
+                    <p style="font-family: stratosSB; font-size: 6vh; color: #FFF6E5;">ALGUNA IDEA EN MENTE?</p>
+                    <p style="font-family: futura-pt; font-size: 2.3vh; color: #FFF6E5;">Si es así, siéntete libre de contactarme, juntos <strong>la sacamos del estadio</strong></p>
+                </div>
+
+                <div class="links2col">
+                    <div style="display: flex; flex-direction: column; gap: 2vh;">
+                        <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">EXPLORAR</p>
+                        <div class="linksExt" class="linksExt">TRABAJO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div class="linksExt">CONTACTO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div class="linksExt">INSPIRACION <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 2vh;">
+                        <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">HERRAMIENTAS CREATIVAS</p>
+                        <div class="linksExt">RECURSOS 
+                            <button style="height: 2vh; font-size: 1.5vh; border-radius: 100vh; background-color: #f2f2f21d; color: #fff6e5; font-family: futura-pt; border: none;" >
+                                SOON
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p onclick="window.location.href='index.html'" style="cursor: pointer; font-size: 2vh;"><span style="color: #707070;">DESIGN</span> <img src="img/coflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">JUAN PABLO ARDILA</span></p>
+                    <p onclick="window.open('https://github.com/Y4ELX')" style="cursor: pointer; font-size: 2vh;"><span style="color: #707070;">DEV</span> <img src="img/mxflagemoji.png" style="height: 1.5vh;" alt=""> <span style="font-family: futuraB;">YAEL MONTERRUBIO</span></p>
+                </div>
+
+                <div>
+                    <p class="textoPlano" style="font-size: 2vh;">© 2024 Juan Pablo Ardila. All Rights Reserved.</p>
+                    <p style="font-family: neueM; color: #707070; font-size: 2vh;">Made with a lot of tintos and good company</p>
+                </div>
+                
+                <p style="color: #707070; font-family: neueM; font-size: 2vh; ">Last updated by Juan on August 07, 2024, 12:07 PM EST</p>
+
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script>
+    function irA(seccion) {
+            const optionSel = document.getElementById("optionSel")
+
+            switch (seccion) {
+                case 'A':
+                    optionSel.style.transform = "translateX(0)";
+                    setTimeout(() => {
+                        window.location.href = "indexes.html";
+                    }, 400);
+                    break;
+                case 'T':
+                    optionSel.style.transform = "translateX(100%)";
+                    setTimeout(() => {
+                        window.location.href = "workes.html";
+                    }, 400);
+                    break;
+            }
+        }
+</script>
+
+<script>
+    function updateLanguageFlag(selectElement) {
+        const selectedOption = selectElement.options[selectElement.selectedIndex];
+        const selectedFlag = selectedOption.getAttribute('data-flag');
+
+        // Actualiza la imagen de la bandera en el div visible
+        const languageFlag = document.getElementById('language-flag');
+        languageFlag.src = selectedFlag;
+        languageFlag.alt = selectedOption.textContent.trim();
+
+        window.location.href = 'index' + selectElement.value + '.html';
+    }
+</script>
+
+<script>
+
+    function openMenu() {
+        var menu = document.getElementById("dropdownMenu");
+        const imgArroba = document.getElementById("imgArroba");
+        const imgClose = document.getElementById("imgClose");
+
+        if (menu.style.display === "none" || menu.style.display === "") {
+
+            imgArroba.style.animation = "spinNormal 0.5s ease-in-out";
+            imgClose.style.animation = "spinNormal 0.5s ease-in-out";
+            imgArroba.style.opacity = "0";
+            setTimeout(() => {
+                imgClose.style.opacity = "1";
+                imgArroba.style.opacity = "0";
+            }, 200);
+
+            menu.style.display = "flex";
+            setTimeout(() => {
+                menu.style.transform = "scale(1)"
+            }, 100);
+        } else {
+
+            imgClose.style.animation = "spinNormalNeg 0.5s ease-in-out";
+            imgArroba.style.animation = "spinNormalNeg 0.5s ease-in-out";
+            imgClose.style.opacity = "0";
+            setTimeout(() => {
+                imgClose.style.opacity = "0";
+                imgArroba.style.opacity = "1";
+            }, 200);
+
+            menu.style.transform = "scale(0.1)"
+            setTimeout(() => {
+                menu.style.display = "none";
+            }, 100);
+        }
+    }
+
+    // Cerrar el menú si se hace clic fuera de él
+    window.onclick = function (event) {
+        if (!event.target.matches('.btnArroba')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+
+</script>
+
+</html>

@@ -2695,6 +2695,10 @@ iframe {
         font-size: 4vh;
     }
 
+    #cursor{
+        display: none;
+    }
+
     .pryct41{
         justify-content: end;
         font-size: 2.5vh;

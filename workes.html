@@ -44,18 +44,22 @@
 </head>
 <body>
 
+    <div id="cursor"></div>
+
     <div class="principalDivW">
         
         <div class="navbar">
             <div class="etiqueta">
-                <img onclick="window.location.href='index.html'" class="manita" src="img/transparent.png" alt="">
+                <img onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='index.html'"
+                    class="manita" src="img/transparent.png" alt="">
                 <div class="nombreEt">
                     <p style="font-family: futuraB; font-size: 2vh; color: white;"> Juan Pablo Ardila
                     </p>
                     <p
                         style="font-family: futura-pt; font-size: 1.7vh; color: white; display: flex; justify-content: center; align-items: center;">
                         <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;" alt="">Quiubo
-                        parce! / Hola, Hellooo
+                        parce!
+                        / Hola, Hellooo
                     </p>
                 </div>
             </div>
@@ -64,12 +68,12 @@
                 <div id="optionSel" style="transform: translateX(100%);" class="optionSel">
                     <div class="lucecita"></div>
                 </div>
-                <div onclick="irA('A')" class="optionsA">Acerca de</div>
-                <div onclick="irA('T')" class="optionsT">Trabajo</div>
+                <div onclick="irA('A')" class="optionsA" onmouseover="cursorPT()" onmouseleave="cursorNM()">Acerca de</div>
+                <div onclick="irA('T')" class="optionsT" onmouseover="cursorPT()" onmouseleave="cursorNM()">Trabajo</div>
             </div>
         
             <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
-                <button onmouseover="cursorNM()" onclick="openMenu()" class="btnArroba">
+                <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="openMenu()" class="btnArroba">
                     <img id="imgArroba" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute"
                         src="img/arroba.svg" alt="">
                     <img id="imgClose"
@@ -89,8 +93,8 @@
                         </div>
         
                         <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
-                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN
-                                PABLO ARDILA</p>
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN PABLO
+                                ARDILA</p>
                             <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
                                 @juan.ardilasf
                             </p>
@@ -100,21 +104,24 @@
         
                     <div
                         style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <p class="contactame">CONTACT</p>
+                        <p class="contactame">CONTACTO</p>
                         <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
         
                         <div
                             style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                            <button onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
+                                onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
                                 LINKEDIN
                             </button>
-                            <button onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
+                                onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
                                 INSTAGRAM
                             </button>
-                            <button onclick="window.open('https://www.behance.net/juanpardila')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
+                                onclick="window.open('https://www.behance.net/juanpardila')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
                                 BEHANCE
                             </button>
                         </div>
@@ -122,7 +129,7 @@
         
                 </div>
         
-                <div id="language-selector">
+                <div id="language-selector" onmouseover="cursorPT()" onmouseleave="cursorNM()">
                     <div id="selected-language">
                         <img src="img/coflag.png" id="language-flag" class="flag-icon">
                     </div>
@@ -132,6 +139,9 @@
                     </select>
                 </div>
             </div>
+        
+        
+        
         </div>
         
 
@@ -570,6 +580,25 @@
         }
     }
 
+</script>
+
+<script>
+    const cursorr = document.getElementById('cursor');
+
+    function cursorCH() {
+        cursorr.style.transform = 'scale(0.75)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
+
+    function cursorPT() {
+        cursorr.style.backgroundColor = 'transparent';
+        cursorr.style.backgroundImage = 'url("img/cursor.svg")';
+    }
+
+    function cursorNM() {
+        cursorr.style.transform = 'scale(1)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
 </script>
 
 </html>

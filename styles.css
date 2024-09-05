@@ -21,8 +21,8 @@ body {
     align-items: center;
     gap: 2vh;
     position: relative;
-    height: 5.5vh;
-    width: 5.5vh;
+    height: 5vh;
+    width: 5vh;
 
     border-radius: 100vh;
     border: solid 0.001vh #88827d5b;
@@ -71,8 +71,8 @@ body {
 }
 
 .flag-icon {
-    height: 5.5vh;
-    width: 5.5vh;
+    height: 5vh;
+    width: 5vh;
 }
 
 .navbar {
@@ -81,7 +81,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     width: 100%;
     position: fixed;
     left: 0px;
@@ -337,7 +337,7 @@ hr {
     align-items: center;
     position: relative;
     gap: 1.5vh;
-    padding: 1vh 0vh;
+    padding: 0;
     border: solid 0.3vh #E6E5DD;
     border-radius: 100vh;
     padding-inline: 2vh;
@@ -432,8 +432,8 @@ hr {
     border-radius: 100vh;
     margin: 0px;
     padding: 0px;
-    height: 6vh;
-    width: 6vh;
+    height: 5vh;
+    width: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -455,7 +455,7 @@ hr {
 .minimenu {
     position: absolute;
     width: fit-content;
-    height: 4vh;
+    height: 3vh;
     left: 50%;
     transform: translateX(-50%);
     padding: 1vh;
@@ -490,10 +490,10 @@ hr {
     font-family: futura-pt-bold;
     color: #FFF6E5;
     z-index: 2;
-    font-size: 2.3vh;
+    font-size: 2vh;
     border-radius: 100vh;
     text-align: center;
-    width: 11vh;
+    width: 10vh;
     padding: 1vh 0.5vh;
     display: flex;
     justify-content: center;
@@ -513,10 +513,10 @@ hr {
     font-family: futura-pt;
     color: #fff6e5;
     z-index: 2;
-    font-size: 2.3vh;
+    font-size: 2vh;
     border-radius: 100vh;
     text-align: center;
-    width: 11vh;
+    width: 10vh;
     padding: 1vh 0.5vh;
     display: flex;
     justify-content: center;
@@ -541,7 +541,7 @@ hr {
     color: #fff6e5;
     border-radius: 100vh;
     text-align: center;
-    width: 11vh;
+    width: 10vh;
     height: calc(100% - 1.5vh);
     padding: 0 0.5vh;
     transition: transform 0.4s ease-in-out;

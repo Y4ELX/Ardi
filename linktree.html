@@ -10,6 +10,38 @@
     <script type="module" src="script.js"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/hnn0vlc.css">
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload Fonts (From Typekit) -->
+    <link rel="preload" href="https://use.typekit.net/hnn0vlc.css" as="style">
+    <link rel="stylesheet" href="https://use.typekit.net/hnn0vlc.css">
+    
+    <!-- Preload Icon -->
+    <link rel="preload" href="img/manitafavicon.png" as="image">
+    <link rel="icon" href="img/manitafavicon.png" type="image/png">
+    
+    <!-- Preload JS -->
+    <link rel="preload" href="script.js" as="script">
+    <script type="module" src="script.js"></script>
+    
+    <!-- Preload Images -->
+    <link rel="preload" href="img/transparent.png" as="image">
+    <link rel="preload" href="img/rayo.png" as="image">
+    <link rel="preload" href="img/gradient3.png" as="image">
+    <link rel="preload" href="img/blur.png" as="image">
+    <link rel="preload" href="img/emoji.svg" as="image">
+    <link rel="preload" href="img/coflag.png" as="image">
+    <link rel="preload" href="img/enflag.png" as="image">
+    <link rel="preload" href="img/ppA.svg" as="image">
+    <link rel="preload" href="img/clouds.svg" as="image">
+    <link rel="preload" href="img/instagramicon.svg" as="image">
+    <link rel="preload" href="img/behanceicon.svg" as="image">
+    <link rel="preload" href="img/linkedinicon.svg" as="image">
+    <link rel="preload" href="img/correoicon.svg" as="image">
+    <link rel="preload" href="img/cursor.svg" as="image">
 </head>
 
 <body>
@@ -98,15 +130,6 @@
 
                 </div>
 
-                <div id="language-selector" onmouseover="cursorPT()" onmouseleave="cursorNM()">
-                    <div id="selected-language">
-                        <img src="img/coflag.png" id="language-flag" class="flag-icon">
-                    </div>
-                    <select id="language" onchange="updateLanguageFlag(this)">
-                        <option value="es" data-flag="img/coflag.png">Español</option>
-                        <option value="en" data-flag="img/enflag.png">English</option>
-                    </select>
-                </div>
 
             </div>
 

@@ -207,10 +207,7 @@ body {
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
-.imgContL{
-    margin-top: 16vh;
-    width: 40vw;
-}
+
 
 
 ::selection {
@@ -460,6 +457,8 @@ hr {
     z-index: 2;
 }
 
+
+
 .btnArroba {
     position: relative;
     background-color: transparent;
@@ -559,6 +558,11 @@ hr {
 
 
     transition: background 0.7s ease;
+}
+
+.imgContL{
+    margin-top: 15vh;
+    width: 10vw;
 }
 
 .optionsT:hover {
@@ -2784,6 +2788,11 @@ iframe {
 
     #mcc{
         display: flex;
+    }
+
+    .imgContL{
+        margin-top: 16vh;
+        width: 40vw;
     }
 
 }

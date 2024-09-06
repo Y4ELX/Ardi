@@ -29,7 +29,7 @@ try {
         switch (lang) {
             case "ESP":
                 audio.src = "img/audio.mp3";
-                playPauseBtn.style.backgroundImage = 'url("img/playbutton.png")';
+                playPauseBtn.style.backgroundImage = 'url("img/playbutton.svg")';
                 ESPP.style.textDecoration = 'underline';
                 ESPP.style.color = '#E6E5DD';
                 ENGP.style.textDecoration = 'none';
@@ -37,7 +37,7 @@ try {
                 break;
             case "ENG":
                 audio.src = "img/audioENG.mp3";
-                playPauseBtn.style.backgroundImage = 'url("img/playbutton.png")';
+                playPauseBtn.style.backgroundImage = 'url("img/playbutton.svg")';
                 ESPP.style.textDecoration = 'none';
                 ESPP.style.color = '#8b8b8b';
                 ENGP.style.textDecoration = 'underline';
@@ -85,44 +85,15 @@ try {
             audio.play().catch((error) => {
                 console.error("Error al intentar reproducir el archivo de audio:", error);
             });
-            playPauseBtn.style.backgroundImage = 'url("img/pausebutton.png")';
+            playPauseBtn.style.backgroundImage = 'url("img/pause.svg")';
         } else {
             audio.pause();
-            playPauseBtn.style.backgroundImage = 'url("img/playbutton.png")';
+            playPauseBtn.style.backgroundImage = 'url("img/playbutton.svg")';
         }
     });
 } catch (error) {
     console.error("Error en el manejo del audio y el slider:", error);
 }
-
-
-let scrollVelocity = 0;
-let isScrolling = false;
-const friction = 0.95; // Factor de fricción para la inercia (ajustar para más/menos inercia)
-const scrollSensitivity = 0.1; // Sensibilidad de desplazamiento (ajustar para más/menos distancia)
-
-function onScroll(event) {
-    isScrolling = true;
-    // Ajustar la distancia de desplazamiento con scrollSensitivity
-    scrollVelocity += event.deltaY * scrollSensitivity;
-}
-
-function smoothScroll() {
-    if (isScrolling) {
-        window.scrollBy(0, scrollVelocity);
-        scrollVelocity *= friction; // Aplicar fricción para simular la inercia
-
-        if (Math.abs(scrollVelocity) < 0.5) { // Umbral para detener el scroll
-            isScrolling = false;
-            scrollVelocity = 0;
-        }
-    }
-    requestAnimationFrame(smoothScroll);
-}
-
-
-window.addEventListener('wheel', onScroll);
-smoothScroll();
 
 //! Cursor
 
@@ -140,3 +111,35 @@ document.addEventListener('DOMContentLoaded', function () {
         cursor.style.top = `${cursorY}px`;
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const textToCopy = 'NEBULA.DESIGNBRAND@GMAIL.COM';
+
+    const button = document.querySelector('.nebdes');
+    const labelContInt = document.querySelector('.labelContInt');
+
+    button.addEventListener('mouseover', () => {
+        labelContInt.style.transform = 'translateY(-2vh)';
+    });
+
+    button.addEventListener('mouseout', () => {
+        labelContInt.style.transform = 'translateY(0)';
+    });
+
+    button.addEventListener('click', () => {
+        labelContInt.style.transform = 'translateY(-4.4vh)';
+
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                console.log('Texto copiado al portapapeles');
+            })
+            .catch(err => {
+                console.error('Error al copiar el texto: ', err);
+        });
+
+        setTimeout(() => {
+            labelContInt.style.transform = 'translateY(0)';
+        }, 2000);
+    });
+});
+

@@ -47,6 +47,9 @@ body {
     color: #fff6e5;
     z-index: 2;
     font-size: 1.7vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 #language {
@@ -338,7 +341,7 @@ hr {
     position: relative;
     gap: 1.5vh;
     padding: 0;
-    border: solid 0.3vh #E6E5DD;
+    border: solid 0.2vh #E6E5DD;
     border-radius: 100vh;
     padding-inline: 2vh;
     width: 50vh;
@@ -835,7 +838,7 @@ iframe {
     position: absolute;
 
     transform: translate(-50%, 0%);
-    top: -1.1vh;
+    top: -1.3vh;
     left: 50%;
 
     z-index: -3;
@@ -909,8 +912,8 @@ iframe {
     top: 0;
     left: 0;
     z-index: 1;
-    min-width: 100%;
-    height: fit-content;
+    height: 100%;
+    width: fit-content;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -996,7 +999,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1014,7 +1017,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1031,7 +1034,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1049,7 +1052,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1067,7 +1070,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1084,7 +1087,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1102,7 +1105,7 @@ iframe {
     flex-direction: column;
     gap: 2vh;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: rgba(239, 239, 235, 0.4);
     z-index: 2;
     font-size: 2vh;
@@ -1115,6 +1118,7 @@ iframe {
     grid-row-start: 4;
     border-radius: 3vh;
     padding: 2.5vh;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -1354,7 +1358,7 @@ iframe {
     font-size: 6vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 
-    font-family: stratos;
+    font-family: stratosSB;
 
 
 }
@@ -2347,6 +2351,7 @@ iframe {
     }
 
     .div1 {
+        align-items: center;
         flex-direction: row;
         grid-row-start: 1;
         width: calc(90vw - 6.5vh);

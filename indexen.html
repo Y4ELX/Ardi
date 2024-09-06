@@ -43,6 +43,7 @@
 </head>
 
 <body>
+    <div id="cursor"></div>
 
     <button class="colombiaBtn">From Colombia to the world</button>
     <div class="image-container"></div>
@@ -67,12 +68,12 @@
                 <div id="optionSel" class="optionSel">
                     <div class="lucecita"></div>
                 </div>
-                <div onclick="irA('A')" class="optionsA">About</div>
-                <div onclick="irA('T')" class="optionsT">Work</div>
+                <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="irA('A')" class="optionsA">About</div>
+                <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="irA('T')" class="optionsT">Work</div>
             </div>
 
-            <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
-                <button onclick="openMenu()" class="btnArroba">
+            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
+                <button  onclick="openMenu()" class="btnArroba">
                     <img id="imgArroba"
                         style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute"
                         src="img/arroba.svg" alt="">
@@ -92,10 +93,8 @@
                             <img src="img/emoji.svg" style="width: 70%; height: auto;" alt="">
                         </div>
 
-                        <div
-                            style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
-                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN
-                                PABLO ARDILA</p>
+                        <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5;">JUAN PABLO ARDILA</p>
                             <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
                                 @juan.ardilasf
                             </p>
@@ -105,7 +104,14 @@
 
                     <div
                         style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <p class="contactame">CONTACT</p>
+                        <div class="labelCont"
+                            style="display: flex; flex-direction: column; height: 2.1vh; overflow: hidden; transition: background-color 0.3s ease;">
+                            <div class="labelContInt" style="transition: transform 0.3s ease;">
+                                <p class="contactame">CONTACT</p>
+                                <p class="contactame">CLICK TO COPY</p>
+                                <p class="contactame">COPIED</p>
+                            </div>
+                        </div>
                         <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
 
                         <div
@@ -127,13 +133,13 @@
 
                 </div>
 
-                <div id="language-selector">
+                <div onmouseover="cursorPT()" onmouseleave="cursorNM()" id="language-selector">
                     <div id="selected-language">
                         <img src="img/enflag.png" id="language-flag" class="flag-icon">
                     </div>
                     <select id="language" onchange="updateLanguageFlag(this)">
-                        <option value="es" data-flag="img/coflag.png">Español</option>
                         <option value="en" data-flag="img/enflag.png">English</option>
+                        <option value="es" data-flag="img/coflag.png">Español</option>
                     </select>
                 </div>
             </div>
@@ -267,8 +273,8 @@
         </div>
 
         <div style="display: flex; flex-direction: row; gap: 2vh; font-size: 2.5vh;">
-            <p onclick="changelang('ESP')" id="ESP" style="cursor: pointer; text-decoration: underline;">ESP</p>
-            <p onclick="changelang('ENG')" id="ENG" style="cursor: pointer;">ENG</p>
+            <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="changelang('ESP')" id="ESP" style="cursor: pointer; text-decoration: underline;">ESP</p>
+            <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="changelang('ENG')" id="ENG" style="cursor: pointer;">ENG</p>
         </div>
 
         <audio id="audio" src="img/audio.mp3"></audio>
@@ -607,7 +613,12 @@ known as coffee).
         languageFlag.alt = selectedOption.textContent.trim();
 
         console.log(selectElement.value);
-        window.location.href = 'index' + selectElement.value + '.html';
+
+        if (selectElement.value == 'es') {
+            window.location.href = 'index.html'
+        } else {
+            window.location.href = 'indexen.html'
+        }
     }
 </script>
 
@@ -663,5 +674,22 @@ known as coffee).
     }
 
 </script>
+<script>
+    const cursorr = document.getElementById('cursor');
 
+    function cursorCH() {
+        cursorr.style.transform = 'scale(0.75)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
+
+    function cursorPT() {
+        cursorr.style.backgroundColor = 'transparent';
+        cursorr.style.backgroundImage = 'url("img/cursor.svg")';
+    }
+
+    function cursorNM() {
+        cursorr.style.transform = 'scale(1)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
+</script>
 </html>

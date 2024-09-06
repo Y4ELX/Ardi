@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gray;
+        }
+
+        .labelCont {
+            display: flex;
+            flex-direction: column;
+            height: 2.4vh;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .labelContInt {
+            transition: transform 0.3s ease;
+            /* Añadido para suavizar la transformación */
+        }
+
+        .pes {
+            font-size: 2vh;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .buttonclick {
+            margin-top: 20px;
+            /* To give some space between the button and the content */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="labelCont">
+        <div id="labelContInt" class="labelContInt">
+            <p class="pes" id="L1">Contacto</p>
+            <p class="pes" id="L2">Click</p>
+            <p class="pes" id="L3">Copy</p>
+        </div>
+    </div>
+
+    <button class="nebdes">
+        yael@gmail.com
+    </button>
+
+    <script>
+        const button = document.querySelector('.nebdes');
+        const labelContInt = document.querySelector('.labelContInt');
+
+        button.addEventListener('mouseover', () => {
+            labelContInt.style.transform = 'translateY(-2vh)';
+        });
+
+        button.addEventListener('mouseout', () => {
+            labelContInt.style.transform = 'translateY(0)';
+        });
+
+        button.addEventListener('click', () => {
+            labelContInt.style.transform = 'translateY(-4.4vh)';
+        });
+    </script>
+</body>
+
+</html>

@@ -170,16 +170,46 @@ body {
     padding: 0px;
 
     width: 100%;
+    height: 100vh;
 
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     background-image: url(img/fnbg.png);
     background-size: 30vh;
     background-repeat: repeat;
+}
+
+.iconsClic{
+    width: 56px;
+    height: 56px;
+    background-color: transparent;
+    border-radius: 100vh;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.links{
+    color: #EFEFEB;
+    font-family: futura-pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border-radius: 16px;
+    gap: 16px;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+}
+
+.imgContL{
+    margin-top: 16vh;
+    width: 40vw;
 }
 
 

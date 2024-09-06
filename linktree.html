@@ -1,14 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links | Juan Pablo Ardila</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/manitafavicon.png" type="image/png">
+    <script type="module" src="script.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/hnn0vlc.css">
 </head>
+
 <body>
     <div class="principalDivW">
 
+        <div id="cursor"></div>
+
+        <div class="navbar">
+            <div class="etiqueta">
+                <img onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='linktree.html'"
+                    class="manita" src="img/transparent.png" alt="">
+                <div class="nombreEt">
+                    <p style="font-family: futuraB; font-size: 2vh; color: white;"> Juan Pablo Ardila
+                    </p>
+                    <p
+                        style="font-family: futura-pt; font-size: 1.7vh; color: white; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;"
+                            alt="">Quiubo
+                        parce!
+                        / Hola, Hellooo
+                    </p>
+                </div>
+            </div>
+
+            <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
+
+                <div id="dropdownMenu" class="dropdown-content">
+
+                    <div style="width: 100%; display: flex; flex-direction: row; justify-content: start; gap: 2vh;">
+
+                        <div
+                            style="display: flex; justify-content: center; align-items: center; position: relative; top: 1vh; width: 7vh; height: 7vh; border-radius: 1vh; background-image: url(img/gradient3.png);">
+                            <img class="gradientBG" src="img/blur.png"
+                                style="top: -40%; left: -40%; width: 180%; height: 180%;" alt="">
+                            <img src="img/emoji.svg" style="width: 70%; height: auto;" alt="">
+                        </div>
+
+                        <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; ">JUAN PABLO ARDILA</p>
+                            <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
+                                @juan.ardilasf
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div style="width: 100%; display: flex; flex-direction: column;">
+
+
+
+                        <div class="labelCont"
+                            style="display: flex; flex-direction: column; height: 2.1vh; overflow: hidden; transition: background-color 0.3s ease;">
+                            <div id="pcc" class="labelContInt" style="transition: transform 0.3s ease;">
+                                <p class="contactame">CONTACTO</p>
+                                <p class="contactame">CLICKEA PARA COPIAR</p>
+                                <p class="contactame">COPIADO</p>
+                            </div>
+
+                            <p id="mcc" class="contactame"
+                                style="text-align: center; justify-content: center; align-items: center; width: 100%;">
+                                CONTACTO</p>
+                        </div>
+
+                        <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
+
+                        <div
+                            style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
+                                onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                LINKEDIN
+                            </button>
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
+                                onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                INSTAGRAM
+                            </button>
+                            <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
+                                onclick="window.open('https://www.behance.net/juanpardila')"
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                BEHANCE
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="language-selector" onmouseover="cursorPT()" onmouseleave="cursorNM()">
+                    <div id="selected-language">
+                        <img src="img/coflag.png" id="language-flag" class="flag-icon">
+                    </div>
+                    <select id="language" onchange="updateLanguageFlag(this)">
+                        <option value="es" data-flag="img/coflag.png">Español</option>
+                        <option value="en" data-flag="img/enflag.png">English</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="imgContL">
+            <img src="img/ppA.svg" style="width: 100%; filter: drop-shadow(0px 0px 7vh white);" alt="">
+        </div>
+
+        <div style="margin-top: 6vh; ">
+            <p style="font-family: messinaSB; width: 100%; font-size: 12px; color: white; display: flex; justify-content: center; align-items: center;">
+                <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;"
+                    alt=""> QUIUBO PARCE! /HOLA, HELLO
+            </p>
+
+            <p style="font-family: stratosSB; font-size: 3vh; color: #EFEFEB; width: 100%; text-align: center; font-size: 32px;">JUAN PABLO ARDILA</p>
+            
+            <p style="margin-top: 5vh; text-align: center; font-family: futura-pt; width: 90vw; font-size: 15px; color: white; display: flex; justify-content: center; align-items: center;">
+                |Diseñador Industrial| Fotógrafo & Filmmaker |<br> Deportista de alto rendimiento |
+            </p>
+
+            <div style=" gap: 16px; margin-top: 5vh; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                <button style="background-image: url(img/instagramicon.svg);" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')" class="iconsClic"></button>
+                <button style="background-image: url(img/behanceicon.svg);" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')" class="iconsClic"></button>
+                <button style="background-image: url(img/linkedinicon.svg);" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')" class="iconsClic"></button>
+                <button style="background-image: url(img/correoicon.svg);" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')" class="iconsClic"></button>
+            </div>
+
+            <div style="margin-top: 6vh;">
+                <div class="links">
+                    <img src="img/clouds.svg" alt="">
+                    <p>VER MI PORTAFOLIO</p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
 </body>
+<script>
+
+    function openMenu() {
+        var menu = document.getElementById("dropdownMenu");
+        const imgArroba = document.getElementById("imgArroba");
+        const imgClose = document.getElementById("imgClose");
+
+        if (menu.style.display === "none" || menu.style.display === "") {
+
+            imgArroba.style.animation = "spinNormal 0.5s ease-in-out";
+            imgClose.style.animation = "spinNormal 0.5s ease-in-out";
+            imgArroba.style.opacity = "0";
+            setTimeout(() => {
+                imgClose.style.opacity = "1";
+                imgArroba.style.opacity = "0";
+            }, 200);
+
+            menu.style.display = "flex";
+            setTimeout(() => {
+                menu.style.transform = "scale(1)"
+            }, 100);
+        } else {
+
+            imgClose.style.animation = "spinNormalNeg 0.5s ease-in-out";
+            imgArroba.style.animation = "spinNormalNeg 0.5s ease-in-out";
+            imgClose.style.opacity = "0";
+            setTimeout(() => {
+                imgClose.style.opacity = "0";
+                imgArroba.style.opacity = "1";
+            }, 200);
+
+            menu.style.transform = "scale(0.1)"
+            setTimeout(() => {
+                menu.style.display = "none";
+            }, 100);
+        }
+    }
+
+    // Cerrar el menú si se hace clic fuera de él
+    window.onclick = function (event) {
+        if (!event.target.matches('.btnArroba')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+
+</script>
+
+<script>
+    const cursorr = document.getElementById('cursor');
+
+    function cursorCH() {
+        cursorr.style.transform = 'scale(0.75)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }
+
+    function cursorPT() {
+        cursorr.style.backgroundColor = 'transparent';
+        cursorr.style.backgroundImage = 'url("img/cursor.svg")';
+    }
+
+    function cursorNM() {
+        cursorr.style.transform = 'scale(1)';
+        cursorr.style.backgroundColor = '#fff6e5';
+    }    
+</script>
+
 </html>

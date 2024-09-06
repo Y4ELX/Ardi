@@ -333,6 +333,7 @@ hr {
     }
 }
 
+
 .inisgniaRounded {
     display: flex;
     flex-direction: row;
@@ -2077,6 +2078,10 @@ iframe {
     display: none;
 }
 
+#mcc {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .nombreEt {
         display: none;
@@ -2741,6 +2746,14 @@ iframe {
     [class^="pryct"] {
         border-radius: 2vh;
         padding: 2.5vh 2.5vh 2.5vh 2.5vh;
+    }
+
+    #pcc{
+        display: none;
+    }
+
+    #mcc{
+        display: flex;
     }
 
 }

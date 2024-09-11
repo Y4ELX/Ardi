@@ -1,77 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Animación de Texto</title>
     <style>
         body {
             display: flex;
-            flex-direction: column;
-            gap: 2vh;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: gray;
+            margin: 0;
+            background: #f0f0f0;
         }
 
-        .labelCont {
+        .container {
+            overflow: hidden;
+            height: 100vh;
+            /* Ajusta según el tamaño de tu texto */
+            position: relative;
+            width: 300px;
+            /* Ajusta según el tamaño de tu texto */
+        }
+
+        .text-wrapper {
             display: flex;
             flex-direction: column;
-            height: 2.4vh;
+            transition: transform 1s;
+            top: 0;
+            left: 0;
+            height: 10vh;
             overflow: hidden;
-            transition: background-color 0.3s ease;
         }
 
-        .labelContInt {
-            transition: transform 0.3s ease;
-            /* Añadido para suavizar la transformación */
-        }
-
-        .pes {
-            font-size: 2vh;
-            padding: 0;
+        .text {
             margin: 0;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .buttonclick {
-            margin-top: 20px;
-            /* To give some space between the button and the content */
+            padding: 0;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            height: 10vh;
+            display: flex;
         }
     </style>
 </head>
 
 <body>
-    <div class="labelCont">
-        <div id="labelContInt" class="labelContInt">
-            <p class="pes" id="L1">Contacto</p>
-            <p class="pes" id="L2">Click</p>
-            <p class="pes" id="L3">Copy</p>
+    <div class="container">
+        <div class="text-wrapper">
+            <p class="text">Texto 1</p>
+            <p class="text">Texto 2</p>
+            <p class="text">Texto 3</p>
+            <p class="text">Texto 4</p>
         </div>
     </div>
-
-    <button class="nebdes">
-        yael@gmail.com
-    </button>
-
     <script>
-        const button = document.querySelector('.nebdes');
-        const labelContInt = document.querySelector('.labelContInt');
+        const texts = document.querySelectorAll('.text');
+        const wrapper = document.querySelector('.text-wrapper');
+        let currentIndex = 0;
 
-        button.addEventListener('mouseover', () => {
-            labelContInt.style.transform = 'translateY(-2vh)';
-        });
+        function showNextText() {
+            const totalTexts = texts.length;
+            wrapper.style.transform = `translateY(-${currentIndex * 100}%)`;
+            currentIndex = (currentIndex + 1) % totalTexts;
+        }
 
-        button.addEventListener('mouseout', () => {
-            labelContInt.style.transform = 'translateY(0)';
-        });
+        function startAnimation() {
+            setInterval(showNextText, 3000); // Cambia de texto cada 3 segundos
+        }
 
-        button.addEventListener('click', () => {
-            labelContInt.style.transform = 'translateY(-4.4vh)';
-        });
+        window.onload = startAnimation;
     </script>
 </body>
 

@@ -6,7 +6,6 @@ body {
     background-color: #000000;
     margin: 0px;
     padding: 0px;
-
     min-height: 100vh;
 
     display: flex;
@@ -480,6 +479,30 @@ hr {
     transition: background-color 0.5s ease;
 }
 
+#menuLeer {
+    position: relative;
+    background-color: transparent;
+    border-radius: 100vh;
+    margin: 0px;
+    padding: 0px;
+    height: 5vh;
+    width: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transform: translate(-50%, -50%) scale(0);
+    
+    backdrop-filter: blur(2vh);
+    -webkit-backdrop-filter: blur(2vh);
+
+    border: solid 0.001vh #88827d5b;
+    box-shadow: 0px 0.5vh 2vh #3030307e;
+
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.09);
+    
+}
+
 .btnArroba:hover {
     background-color: #cccccc10;
     transition: background-color 0.5s ease;
@@ -563,6 +586,8 @@ hr {
 .imgContL{
     margin-top: 15vh;
     width: 10vw;
+    border-radius: 100vh;
+    overflow: hidden;
 }
 
 .optionsT:hover {

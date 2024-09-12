@@ -45,7 +45,24 @@
 <body>
     <div id="cursor"></div>
 
-    <button class="colombiaBtn">From Colombia to the world</button>
+        <div id="menuLeer" style="z-index: 3; background-color: rgba(28, 28, 28, 0.75); position: absolute; overflow: hidden; flex-direction: column; position: fixed; top: 50%; left: 50%; height: 75vh; width: 85vw;  border-radius: 2vh; backdrop-filter: blur(2vh); padding: 2vh; padding-bottom: 0;">
+
+        <div style="width: 100%; display: flex; align-items: end; justify-content: end; margin-bottom: 2vh;">
+            <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="BtnCerrarAbrir()" class="btnArroba" style="background-color: rgba(255, 255, 255, 0.09);">
+                <img src="img/close.svg" style="width: 70%;" alt="">
+            </button>
+        </div>
+
+        <div style="height: 100%; width: 100%; overflow: auto;">
+            <p class="textoPlano" style=" width: 90%; margin-inline: auto; text-align: justify; font-size: 3vh;">
+            All of this started with the ambitious dream of a boy in Colombia to hear his name shouted by thousands of people in a stadium, while he proudly took in the moment, with tired shoulders, catching his breath as he looked up at the sky like his idol, feeling butterflies throughout his body, like the ones he felt when he first talked to the girl he liked, or when he lined up the ball 12 meters from the goalkeeper to take a penalty kick. One of the words he encountered on his journey at a young age was, “your son will never be what he wants, he won’t achieve it, I assure you,” and certainly, in part, they were right. When he entered university, that dream faded away. The boy began to study, with complete freedom, what his father had seen in an online brochure one night when he was filled with curiosity about what this world had to offer the new generations. In his proper intuition, this father, full of love and kindness, guided his son on the right path, even though neither of them was absolutely certain at the time if they were making the right decision, especially since in my first semester, which I call a transition period, everything seemed to indicate otherwise. Thus, at 16 years old, in 2019, I began to study a career that adapted to what my parents remembered of their little boy who, apart from the fact that they knew they had raised a high-performance athlete his entire life, player number 6 for the Lion of the Capital, also knew of that adventurous, restless, rebellious, determined being who was curious about how things worked, dismantling everything in his path and, even though sometimes what he dismantled he couldn’t put back in its original state, they remembered how happy he was watching how the objects around him worked, amazed at how they were made, from the simplest toy like that red and blue tricycle he sped across the yard of the house where he grew up, to a small electric four-wheeler that my parents had saved up for, and that now only lives in my memory (sorry, Dad and Mom). Finishing university, when moments got tough due to the many circumstances surrounding our lives, I fervently recalled the words of my coach’s former assistant, visualizing only a path of frustration about what could have been, while at the same time, admiring my classmates, longing to be as good as them. However, as a child, on that night when my pillows were soaked with tears, I knew something had changed. I knew I would never again let someone tell me I wasn’t capable of doing things, of becoming who I wanted to be, and even though the cycle repeated itself once I graduated from university (I was rejected from many jobs), I remembered the words of Oscar, my coach in the university team, “the tree that bears the most fruit is the one that gets the most stones thrown at it,” and I remembered that person life placed in my path, who always saw something in me when I was unable to even recognize it, to remind me that I had to believe in myself, because even if I couldn’t see it, he and everyone knew what I was capable of, how good I was. Remembering those moments, accompanied by a perpetual growth mindset, after an extensive period of healing accompanied by meditation, drives me to prove to myself that I can, that every day is an effort to be better than yesterday, it fills me with energy to prepare and push myself daily, both physically and mentally, to face the most extreme circumstances, to be at the highest level, to discover my maximum potential, to grow with purpose. And you know what the greats in life have? Steve Jobs said, “you can’t connect the dots looking forward, you can only connect them looking backward,” or in other words, its most accurate translation would be to discover what filled that boy with joy every time he did things, so what do you say, will you join me on this journey? What you’re about to see is a leap toward where I want to be, in what I love, what I’m good at, what I believe in, what I do, but most of all, by now you must have realized why I do it. As we say in the streets of the capital, “go ahead, neighbor, feel at home,” experience the creations of this rebellious, dreamy, and adventurous young man.            </p>
+        </div>
+
+        <img src="img/simb.svg" style="margin-block: 3vh;" alt="">
+
+    </div>
+
+    <button class="colombiaBtn">From Colombia to <br>the world</button>
     <div class="image-container"></div>
 
     <div class="principalDiv">
@@ -117,15 +134,15 @@
                         <div
                             style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
                             <button onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5; font-size: 2vh;">
                                 LINKEDIN
                             </button>
                             <button onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5; font-size: 2vh;">
                                 INSTAGRAM
                             </button>
                             <button onclick="window.open('https://www.behance.net/juanpardila')"
-                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                style="cursor: pointer; font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5; font-size: 2vh;">
                                 BEHANCE
                             </button>
                         </div>
@@ -209,7 +226,7 @@
             </div>
 
             <div class="insignias">
-                <img class="gradientBG" src="img/gradient.png" alt="">
+                <img class="gradientBG" src="img/gradient.gif" alt="">
 
                 <p style="font-family: messinaSB; font-size: 2vh;">PROCESO</p>
                 <p class="insigniasText"">INSIGNIAS</p>
@@ -267,6 +284,12 @@
     </div>
 
     <div class="audio">
+
+        <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="BtnCerrarAbrir()"
+            style="background-color: transparent; border: none; position: absolute; top: 4vh; right: 2vh; height: 9vh;">
+            <img src="img/read.svg" style="height: 100%;" alt="">
+        </button>
+
         <p style="font-family: messinaSB; font-size: 2vh;">AUDIO</p>
         <div style="display: flex; flex-direction: row; justify-content: end; align-items: end;">
             <p class="WIAB">WHERE IT ALL BEGAN</p>
@@ -475,8 +498,7 @@ known as coffee).
         <div class="b2">
             <p class="messinaText">STARRING</p>
             <p class="stratosText">SELECTED WORK</p>
-            <p class="textoPlanoAcurated">A curated selection from our collected works encompassing evocative film
-                scores to iconic sonic identities.</p>
+            <p class="textoPlanoAcurated">A curated collection of my most impactful design projects, showcasing a diverse range of skills and approaches</p>
         </div>
         <div class="b3">
             <img class="gradientBGCREO" style="z-index: -1;" src="img/imgLT.png" alt="">
@@ -660,6 +682,42 @@ known as coffee).
         }
     }
 
+        function openMenu() {
+        var menu = document.getElementById("dropdownMenu");
+        const imgArroba = document.getElementById("imgArroba");
+        const imgClose = document.getElementById("imgClose");
+
+        if (menu.style.display === "none" || menu.style.display === "") {
+
+            imgArroba.style.animation = "spinNormal 0.5s ease-in-out";
+            imgClose.style.animation = "spinNormal 0.5s ease-in-out";
+            imgArroba.style.opacity = "0";
+            setTimeout(() => {
+                imgClose.style.opacity = "1";
+                imgArroba.style.opacity = "0";
+            }, 200);
+
+            menu.style.display = "flex";
+            setTimeout(() => {
+                menu.style.transform = "scale(1)"
+            }, 100);
+        } else {
+
+            imgClose.style.animation = "spinNormalNeg 0.5s ease-in-out";
+            imgArroba.style.animation = "spinNormalNeg 0.5s ease-in-out";
+            imgClose.style.opacity = "0";
+            setTimeout(() => {
+                imgClose.style.opacity = "0";
+                imgArroba.style.opacity = "1";
+            }, 200);
+
+            menu.style.transform = "scale(0.1)"
+            setTimeout(() => {
+                menu.style.display = "none";
+            }, 100);
+        }
+    }
+
     // Cerrar el menú si se hace clic fuera de él
     window.onclick = function (event) {
         if (!event.target.matches('.btnArroba')) {
@@ -674,8 +732,26 @@ known as coffee).
     }
 
 </script>
+
 <script>
     const cursorr = document.getElementById('cursor');
+    const menuLeer = document.getElementById('menuLeer');
+
+    function BtnCerrarAbrir() {
+        if (menuLeer.style.display == "none" || menuLeer.style.display == "") {
+            menuLeer.style.display = "flex"
+            setTimeout(() => {
+                menuLeer.style.transform = "translate(-50%, -50%) scale(1)"
+            }, 100);
+            console.log("abrir")
+        } else {
+            menuLeer.style.transform = "translate(-50%, -50%) scale(0)"
+            setTimeout(() => {
+                menuLeer.style.display = "none"
+            }, 500);
+            console.log("cerrar")
+        }
+    }
 
     function cursorCH() {
         cursorr.style.transform = 'scale(0.75)';
@@ -690,6 +766,6 @@ known as coffee).
     function cursorNM() {
         cursorr.style.transform = 'scale(1)';
         cursorr.style.backgroundColor = '#fff6e5';
-    }
+    }    
 </script>
 </html>

@@ -44,23 +44,25 @@
 <body>
     <div id="cursor"></div>
 
-    <div id="menuLeer" style="z-index: 3; background-color: rgba(28, 28, 28, 0.75); position: absolute; overflow: hidden; flex-direction: column; position: fixed; top: 50%; left: 50%; height: 75vh; width: 85vw;  border-radius: 2vh; backdrop-filter: blur(2vh); padding: 2vh; ">
+    <div id="menuLeer" style="z-index: 3; background-color: rgba(28, 28, 28, 0.75); position: absolute; overflow: hidden; flex-direction: column; position: fixed; top: 50%; left: 50%; height: 75vh; width: 85vw;  border-radius: 2vh; backdrop-filter: blur(2vh); padding: 2vh; padding-bottom: 0;">
 
         <div style="width: 100%; display: flex; align-items: end; justify-content: end; margin-bottom: 2vh;">
-            <button onclick="BtnCerrarAbrir()" class="btnArroba" style="background-color: rgba(255, 255, 255, 0.09);">
+            <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="BtnCerrarAbrir()" class="btnArroba" style="background-color: rgba(255, 255, 255, 0.09);">
                 <img src="img/close.svg" style="width: 70%;" alt="">
             </button>
         </div>
 
         <div style="height: 100%; width: 100%; overflow: auto;">
-            <p class="textoPlano" style=" width: 90%; margin-inline: auto; text-align: justify; font-size: 2.5vh;">
+            <p class="textoPlano" style=" width: 90%; margin-inline: auto; text-align: justify; font-size: 3vh;">
                 Todo esto empezó con el ambicioso sueño de un niño en Colombia de escuchar su nombre en el grito de miles de personas en un estadio, mientras apreciaba orgulloso el momento, con los hombros cansados, recuperando su aliento mientras miraba el cielo como su ídolo, y sintiendo maripositas por todo su cuerpo, como las que sentía cuando le hablaba por primera vez a la chica que le gustaba, o cuando cuadraba el balón a 12 metros del arquero para patear un penal. Una de las palabras que encontró en su camino a su corta edad fue “su hijo no podrá ser lo que quiere, no lo va a lograr, se lo aseguro” y ciertamente en parte tenía razón, al entrar a la universidad, ese sueño se apagó, el niño empezó a estudiar, con total libertad, aquello que su padre había visto en un folleto por internet, en una noche en la que lo invadía la curiosidad por saber que tenía este mundo por ofrecerle a las nuevas generaciones. En su adecuada intuición, este padre, lleno de amor y bondad guio a su hijo por el camino correcto, aunque ninguno de los dos tuviese la certeza absoluta en su momento de si estaban tomando la decisión correcta, sobre todo porque en mi primer semestre, en el que yo llamo un periodo de transición, todo parecía indicar lo contrario. Siendo así, y con 16 años, en el 2019 empecé a estudiar una carrera que se adaptaba a lo que mis padres recordaban de su niño pequeño que, aparte de que tenían claro que habían criado a un deportista del más alto rendimiento toda su vida, jugador 6 del León de la Capital, también sabían de aquel ser aventurero, inquieto, rebelde, determinado, que sentía curiosidad por saber como funcionaban las cosas, desarmando todo a su paso y, aunque a veces lo que desarmara no lo pudiese regresar a su estado original, recordaban lo feliz que era viendo como funcionaban los objetos que lo rodeaban, asombrado de como los hacían, desde el juguete más simple como aquel triciclo rojo y azul que deslizaba a toda velocidad en el patio de la casa en la que creció, hasta una pequeña cuatrimoto eléctrica para la que mis padres habían ahorrado y que ahora solo vive en mi memoria (perdón papá y mamá). Acabando la universidad, cuando los momentos se ponían difíciles por las múltiples circunstancias que rodean nuestra vida, recordaba con fervor las palabras del antiguo asistente de mi entrenador, visualizando únicamente un camino de frustración acerca de lo que pudo ser, y al mismo tiempo, admirando a mis compañeros de carrera, anhelando ser tan bueno como ellos. Más sin embargo, de niño, aquella noche en donde las almohadas de mi cama se empaparon de lagrimas, supe que algo había cambiado, sabía que nunca más iba a dejar que alguien me dijera que no era capaz de hacer las cosas, de convertirme en quien quería ser, y aunque el ciclo, una vez terminé la universidad se repitiera (fui rechazado en muchos trabajos) recordé las palabras de Oscar, mi entrenador en la selección de la universidad, “el árbol que más frutos da, es al que más piedras le tiran”, y recordé aquel ser al que puso la vida en mi camino, que siempre vio algo en mi cuando era yo incapaz de siquiera reconocerlo, para recordarme que debía confiar en mi, porque aunque yo fuera incapaz de verlo, el y todos sabían de lo que era capaz, de lo bueno que era. Recordar esos momentos, acompañado de una perpetua mentalidad de crecimiento, después de un extenso periodo de sanación acompañado de la meditación, me impulsa a demostrarme a mi mismo que si puedo, de que cada día es un esfuerzo para ser mejor que ayer, me llena de ánimo preparar y exigir diariamente a mi cuerpo y a mi mente para afrontar las circunstancias más extremas, para estar al máximo nivel, descubrir mi máximo potencial, crecer con propósito. Y sabes que tienen los grandes en la vida? Steve Jobs, dijo, “no puedes conectar los puntos mirando hacia adelante, contáctalos mirando hacia atrás”, o en otras palabras, su traducción más correcta sería descubrir que llenaba a este niño de alegría, cada vez que hacía las cosas, entonces que dices, me acompañas en este camino? Lo que estas por ver, es un salto hacia donde quiero estar, de lo que me gusta, en lo que soy bueno, en lo que creo, en lo que hago, pero sobre todo, en este punto ya te habrás dado cuenta el por que lo hago. Como decimos en las calles de la capital, “siga veci bien pueda”, siéntete en casa experimentando las creaciones de este jóven rebelde, soñador y aventurero.
             </p>
         </div>
 
+        <img src="img/simb.svg" style="margin-block: 3vh;" alt="">
+
     </div>
 
-    <button class="colombiaBtn">De Colombia, para el mundo</button>
+    <button class="colombiaBtn">De Colombia, para <br>el mundo</button>
     <div class="image-container"></div>
 
     <div class="principalDiv">
@@ -130,15 +132,15 @@
                     
                         <div style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
                             <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')"
-                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5; font-size: 2vh;">
                                 LINKEDIN
                             </button>
                             <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')"
-                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5; font-size: 2vh;">
                                 INSTAGRAM
                             </button>
                             <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.open('https://www.behance.net/juanpardila')"
-                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5;">
+                                style="   font-family: neueM; border: solid 0.1vh #fff6e5; background-color: transparent; border-radius: 100vh; padding: 1vh; color: #fff6e5; font-size: 2vh;">
                                 BEHANCE
                             </button>
                         </div>
@@ -270,8 +272,8 @@
         
         <div class="audio">
 
-            <button onclick="BtnCerrarAbrir()" class="btnArroba" style="color: white;">
-                eee
+            <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="BtnCerrarAbrir()" style="background-color: transparent; border: none; position: absolute; top: 4vh; right: 2vh; height: 9vh;">
+                <img src="img/leer.svg" style="height: 100%;" alt="">
             </button>
 
             <p style="font-family: messinaSB; font-size: 2vh;">AUDIO</p>
@@ -500,7 +502,7 @@
             <div class="b2">
                 <p class="messinaText">STARRING</p>
                 <p class="stratosText">SELECTED WORK</p>
-                <p class="textoPlanoAcurated">A curated selection from our collected works encompassing evocative film scores to iconic sonic identities.</p>
+                <p class="textoPlanoAcurated">A curated collection of my most impactful design projects, showcasing a diverse range of skills and approaches.</p>
             </div>
             <div class="b3">
                 <img class="gradientBGCREO" style="z-index: -1;" src="img/imgLT.png"  alt="">
@@ -540,7 +542,7 @@
         </div>
 
         <div style="margin-top: 10vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2vh; margin-bottom: 50vh;">
-            <div style="display: flex; flex-direction: row; gap: 2vh; justify-content: center; align-items: center;">
+            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workes.html'" style="display: flex; flex-direction: row; gap: 2vh; justify-content: center; align-items: center;">
                 <img src="img/flechita.png" style="height: 1vh;" alt="">
                 <p class="messinaText" style="color: #CCCBC4; text-align: center; width: fit-content;">ECHA UN VISTAZO A TODOS MIS TRABAJOS</p>
             </div>

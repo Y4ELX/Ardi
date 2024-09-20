@@ -967,6 +967,23 @@ iframe {
 
 }
 
+.borderLines{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -50%;
+    left: -50%;
+    border-radius: 3vh;
+    pointer-events: none;
+
+    transform: translate(50%, 50%);
+
+    background-color: transparent;
+    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+
+    z-index: 3;
+}
+
 .gradientBG {
     position: absolute;
     top: -5%;

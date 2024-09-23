@@ -2733,14 +2733,14 @@ iframe {
         font-size: 5vh;
     }
 
-    .gradientBG{
-        width: 110%;
-        height: 110%;
-    }
-
     .gradientBGCREO {
         width: unset;
         height: 100%;
+    }
+
+    .imagenesindex{
+        width: 110%;
+        height: 110%;
     }
 
     .textoPlanoUS {

@@ -2510,6 +2510,7 @@ iframe {
 
     .colombiaBtn:hover {
         width: 19vh;
+        padding-left: 2vh;
         background-color: #FFF6E5;
         background-image: none;
         color: #000000;

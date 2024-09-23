@@ -855,7 +855,7 @@ iframe {
     color: #E6E5DD;
     z-index: 2;
     font-size: 3vh;
-    gap: 0.5vh;
+    gap: 2vh;
     position: relative;
     width: calc(65% - 5vh);
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
@@ -2867,21 +2867,21 @@ iframe {
     }
 
     .b5 {
-        height: 15vh;
+        height: 30vh;
     }
 
     .b6 {
-        height: 15vh;
+        height: 30vh;
     }
 
     .b7 {
         height: 25vh;
     }
     .b8 {
-        height: 15vh;
+        height: 30vh;
     }
     .b9 {
-        height: 15vh;
+        height: 30vh;
     }
 
     .links2col {
@@ -2939,7 +2939,7 @@ iframe {
     }
 
     .parasentirte {
-        margin-top: 4vh;
+        margin-top: 6vh;
         z-index: 2;
         font-size: 2vh
     }
@@ -3320,5 +3320,10 @@ iframe {
         display: none;
     }
 
+    #imagenesDobl {
+        z-index: -1;
+        height: 100%;
+        width: fit-content;
+    }
 
 }

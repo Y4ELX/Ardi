@@ -2735,8 +2735,8 @@ iframe {
     }
 
     .gradientBGCREO {
-        width: unset;
-        height: 100%;
+        width: 110%;
+        height: 110%;
     }
 
     .textoPlanoUS {

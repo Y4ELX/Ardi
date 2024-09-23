@@ -613,7 +613,7 @@ hr {
     height: calc(100% - 1.5vh);
     padding: 0 0.5vh;
     transition: transform 0.4s ease-in-out;
-    background-color: #f2f2f200;
+    background-color: #f2f2f214;
 }
 
 .etiqueta {

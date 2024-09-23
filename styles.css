@@ -2479,6 +2479,11 @@ iframe {
     border: none;
 }
 
+#imagenesindex {
+    z-index: -1;
+    height: 100%;
+    width: fit-content;
+}
 
 @media only screen and (max-width: 600px) {
     .nombreEt {

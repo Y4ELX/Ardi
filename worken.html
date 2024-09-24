@@ -47,7 +47,7 @@
     <div id="cursor"></div>
 
     <div class="principalDivW">
-        
+
         <div class="navbar">
             <div class="etiqueta">
                 <img onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='index.html'"
@@ -57,56 +57,69 @@
                     </p>
                     <p
                         style="font-family: futura-pt; font-size: 1.7vh; color: white; display: flex; justify-content: center; align-items: center;">
-                        <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;" alt="">Quiubo
+                        <img src="img/rayo.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;"
+                            alt="">Quiubo
                         parce!
                         / Hola, Hellooo
                     </p>
                 </div>
             </div>
-        
+
             <div class="minimenu">
                 <div id="optionSel" style="transform: translateX(100%);" class="optionSel">
                     <div class="lucecita"></div>
                 </div>
-                <div onclick="irA('A')" class="optionsA" onmouseover="cursorPT()" onmouseleave="cursorNM()">About</div>
-                <div onclick="irA('T')" class="optionsT" onmouseover="cursorPT()" onmouseleave="cursorNM()">Work</div>
+                <div onclick="irA('A')" class="optionsT" onmouseover="cursorPT()" onmouseleave="cursorNM()">Acerca de
+                </div>
+                <div onclick="irA('T')" class="optionsA" onmouseover="cursorPT()" onmouseleave="cursorNM()">Trabajo
+                </div>
             </div>
-        
+
             <div class="etiqueta" style="gap: 3vh; align-items: center; justify-content: end; left: unset; right: 3vh;">
                 <button onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="openMenu()" class="btnArroba">
-                    <img id="imgArroba" style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute"
+                    <img id="imgArroba"
+                        style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute"
                         src="img/arroba.svg" alt="">
                     <img id="imgClose"
                         style="width: 60%; height: 60%; transition: opacity 0.7s ease; position: absolute; opacity: 0;"
                         src="img/close.svg" alt="">
                 </button>
-        
+
                 <div id="dropdownMenu" class="dropdown-content">
-        
+
                     <div style="width: 100%; display: flex; flex-direction: row; justify-content: start; gap: 2vh;">
-        
+
                         <div
                             style="display: flex; justify-content: center; align-items: center; position: relative; top: 1vh; width: 7vh; height: 7vh; border-radius: 1vh; background-image: url(img/gradient3.png);">
-                            <img class="gradientBG" src="img/blur.png" style="top: -40%; left: -40%; width: 180%; height: 180%;"
-                                alt="">
+                            <img class="gradientBG" src="img/blur.png"
+                                style="top: -40%; left: -40%; width: 180%; height: 180%;" alt="">
                             <img src="img/emoji.svg" style="width: 70%; height: auto;" alt="">
                         </div>
-        
-                        <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
-                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN PABLO
+
+                        <div style="width: auto; display: flex; flex-direction: column; justify-content: center;">
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5; white-space: pre;">JUAN
+                                PABLO
                                 ARDILA</p>
                             <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
                                 @juan.ardilasf
                             </p>
                         </div>
-        
+
                     </div>
-        
+
                     <div
                         style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <p class="contactame">CONTACTO</p>
+                        <div class="labelCont"
+                            style="display: flex; flex-direction: column; height: 2.1vh; overflow: hidden; transition: background-color 0.3s ease;">
+                            <div class="labelContInt" style="transition: transform 0.3s ease;">
+                                <p class="contactame">CONTACTO</p>
+                                <p class="contactame">CLICKEA PARA COPIAR</p>
+                                <p class="contactame">COPIADO</p>
+                            </div>
+                        </div>
+
                         <p class="nebdes">NEBULA.DESIGNBRAND@GMAIL.COM</p>
-        
+
                         <div
                             style="gap: 1.5vh; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
                             <button onmouseover="cursorPT()" onmouseleave="cursorNM()"
@@ -126,26 +139,26 @@
                             </button>
                         </div>
                     </div>
-        
+
                 </div>
-        
+
                 <div id="language-selector" onmouseover="cursorPT()" onmouseleave="cursorNM()">
                     <div id="selected-language">
-                        <img src="img/enflag.png" id="language-flag" class="flag-icon">
+                        <img src="img/coflag.png" id="language-flag" class="flag-icon">
                     </div>
                     <select id="language" onchange="updateLanguageFlag(this)">
-                        <option value="en" data-flag="img/enflag.png">English</option>
                         <option value="es" data-flag="img/coflag.png">Español</option>
+                        <option value="en" data-flag="img/enflag.png">English</option>
                     </select>
                 </div>
             </div>
-        
-        
-        
-        </div>
-        
 
-        <div class="QS" style=" height: fit-content; margin: unset; margin-top: 20vh; ">
+
+
+        </div>
+
+
+        <div class="QS" style=" height: auto; margin: unset; margin-top: 20vh; ">
             <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">SIGA</p>
             <p style="filter: drop-shadow(0px 0px 2vh #e6e5dd77);">VECI</p>
             <p style="font-family: messinaSB; color: #E6E5DD; font-size: 2.5vh;">BIEN</p>
@@ -153,7 +166,8 @@
             <p style="padding-top: 3vh; font-family: messinaSB; color: #E6E5DD; font-size: 1.7vh;">[BE·SI·NO]</p>
         </div>
 
-        <div class="QSVeci" style="height: fit-content;margin: unset;padding-bottom: 7vh;justify-content: center;align-items: center; margin-top: 20vh; ">
+        <div class="QSVeci"
+            style="height: auto;margin: unset;padding-bottom: 7vh;justify-content: center;align-items: center; margin-top: 20vh; ">
             <div
                 style="height: 7vh; line-height: 0; display: flex; flex-direction: row; justify-content: start; align-items: start;">
                 <p
@@ -167,7 +181,8 @@
                     BIEN</p>
             </div>
             <div style="display: flex; flex-direction: row;">
-                <p style="font-size: 7vh; height: 7vh; display: flex; justify-content: center; align-items: center;">PUEDA</p>
+                <p style="font-size: 7vh; height: 7vh; display: flex; justify-content: center; align-items: center;">
+                    PUEDA</p>
                 <p style="padding-top: 3vh; font-family: messinaSB; color: #E6E5DD; font-size: 1.7vh;">[BE·SI·NO]</p>
             </div>
         </div>
@@ -175,39 +190,42 @@
         <div
             style="padding-bottom: 7vh; cursor: pointer; gap: 1vh; height: 2.7vh; flex-direction: row; display: flex; justify-content: center; align-items: center;">
             <p onclick="window.open('https://www.behance.net/juanpardila')" class="textoPlano"
-                style="margin: 0px; font-family: neueM; font-size: 2.2vh; width: fit-content; text-align: center;">BEHANCE</p>
+                style="margin: 0px; font-family: neueM; font-size: 2.2vh; width: auto; text-align: center;">BEHANCE</p>
             <img src="img/flechita.png" style="height: 1.1vh;" alt="">
         </div>
 
         <div class="parentPR">
             <div class="pryct1">01</div>
             <div class="pryct2" style="gap: 0;">
-                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
-                <p style="margin: 0; padding: 0;">UX UI DESIGN</p>
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTANDO</p>
+                <p style="margin: 0; padding: 0;">DISEÑO UX UI</p>
                 <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
             </div>
             <div class="pryct3"></div>
             <div class="pryct4">
-                <img class="gradientBG" src="img/NUVO.png" style="top: 0; left: 0; z-index: -1; height: fit-content; min-width: 100%; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
-
+                <img class="gradientBG" src="img/NUVO.png"
+                    style="top: 0; left: 0; z-index: -1; width: 100%; height: auto; object-fit: contain; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>GROCERIES EVOLVED</p>
                     <p>UX UI 001</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>UX UI SELECTED WORK</p>
                     <p class="title">NUVO</p>
                 </div>
             </div>
             <div class="pryct5">
-                <img class="gradientBG" src="img/onlythebrave.svg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
-                
+                <img class="gradientBG" src="img/onlythebrave.svg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>BE</p>
                     <p>BRAND 001</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>BRAND SELECTED WORK</p>
                     <p class="title">BE® STREETWEAR</p>
@@ -215,49 +233,68 @@
             </div>
             <div class="pryct6">
                 <p class="titleAB">LE REVE ®</p>
-                <img class="gradientBG" src="img/lereve.svg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/lereve.svg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct7">
                 <p class="titleAB">REBL</p>
-                <img class="gradientBG" src="img/nuvo2.png" style="top: 0; left: 0; z-index: -1; min-height: 100%; width: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/nuvo2.png"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
-            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workTes.html'" class="pryct8">
+            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workTes.html'"
+                class="pryct8">
                 <p class="titleAB">
                     OCTO
                 </p>
+                <img class="gradientBG" src="img/octojpg.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
-            <div class="pryct9">
+            <div class="pryct9" style="display: none;">
                 <p class="titleAB">
                     LÉKUÉ
                 </p>
+                <img class="gradientBG" src="img/ecosoak.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
-            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workTes.html'" class="pryct10">
+            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workTes.html'"
+                class="pryct10">
                 <p class="titleAB">
                     ECOSOAK
                 </p>
+                <img class="gradientBG" src="img/ecosoak.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
-            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workTes.html'" class="pryct11">
+            <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='workTes.html'"
+                class="pryct11">
                 <p class="titleAB">
                     MARKUS
                 </p>
+                <img class="gradientBG" src="img/markus.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct12">02</div>
             <div class="pryct13"></div>
             <div class="pryct14">
-                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTANDO</p>
                 <p style="margin: 0; padding: 0;">BRANDING</p>
                 <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
             </div>
             <div class="pryct15">
                 <img class="gradientBG" src="img/guantes.png"
-                    style="top: 0; left: 0; z-index: -1; min-height: 100%; width: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-height: 100%; width: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>THE SURGEON</p>
                     <p>BRAND 001</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>BRANDING SELECTED WORK</p>
                     <p class="title">DR. SEBASTIÁN MERCHÁN&#174;</p>
@@ -265,14 +302,14 @@
             </div>
             <div class="pryct16">
                 <img class="gradientBG" src="img/bag.png"
-                    style="top: 0; left: 0; z-index: -1; min-height: 100%; width: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-height: 100%; width: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>PERSONAL BRANDING</p>
                     <p>BRAND 002</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>BRANDING</p>
                     <p class="title">BEHLIA</p>
@@ -282,37 +319,45 @@
             <div class="pryct17">03</div>
 
             <div class="pryct18">
-                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
-                <p style="margin: 0; padding: 0;">PHOTO & VIDEO</p>
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTANDO</p>
+                <p style="margin: 0; padding: 0;">FOTOS & VIDEOS</p>
                 <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
             </div>
             <div class="pryct19"></div>
             <div class="pryct20">
                 <p class="titleAB">SENZA CLUB&#174;</p>
-                <img class="gradientBG" src="img/senzaclub.jpg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/senzaclub.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct21">
                 <p class="titleAB">DRINKS</p>
-                <img class="gradientBG" src="img/drinks.jpg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/drinks.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct22">
                 <p class="titleAB">PETS</p>
-                <img class="gradientBG" src="img/pet.jpg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/pet.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct23">
                 <p class="titleAB">PORTRAITS</p>
-                <img class="gradientBG" src="img/port.jpg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/port.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct24">
                 <img class="gradientBG" src="img/beclose.jpg"
-                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>STREETWEAR WEB</p>
                     <p>PH 002</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>PHOTOGRAPHY</p>
                     <p class="title">BE&#174;</p>
@@ -320,14 +365,14 @@
             </div>
             <div class="pryct25">
                 <img class="gradientBG" src="img/GB.jpg"
-                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-height: 100%; width: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>CANDELARIA</p>
                     <p>PH 001</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>PHOTOGRAPHY</p>
                     <p class="title">GRUPO BOLIVAR&#174;</p>
@@ -335,14 +380,14 @@
             </div>
             <div class="pryct26">
                 <img class="gradientBG" src="img/arcity.jpg"
-                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>CANDELARIA</p>
                     <p>PH 003</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>PHOTOGRAPHY</p>
                     <p class="title">AROUND THE CITY</p>
@@ -350,7 +395,7 @@
             </div>
             <div class="pryct27">04</div>
             <div class="pryct28">
-                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTANDO</p>
                 <p style="margin: 0; padding: 0;">GRAPHIC</p>
                 <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
             </div>
@@ -358,14 +403,14 @@
             <div class="pryct29"></div>
             <div class="pryct30">
                 <img class="gradientBG" src="img/folded.png"
-                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>BAR MENU</p>
                     <p>GR 001</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>GRAPHIC</p>
                     <p class="title">COCO VICE NIGHT CLUB&#174;</p>
@@ -373,14 +418,14 @@
             </div>
             <div class="pryct31">
                 <img class="gradientBG" src="img/3ph.png"
-                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
                     alt="">
-                
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>PERSONALIZED EXPERIENCES</p>
                     <p>GR 002</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>GRAPHIC</p>
                     <p class="title">BE&#174;</p>
@@ -388,18 +433,22 @@
             </div>
             <div class="pryct32">05</div>
             <div class="pryct33">
-                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTANDO</p>
                 <p style="margin: 0; padding: 0;">3D</p>
                 <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
             </div>
             <div class="pryct34"></div>
             <div class="pryct35">
                 <p id="inners" class="title">INNER SELF</p>
-                <img class="gradientBG" src="img/inner.png" style="top: 0; left: 0; z-index: -1; min-height: 100%; width: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/inner.png"
+                    style="top: 0; left: 0; z-index: -1; min-height: 100%; width: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct36">
                 <p class="title">INTERIOR</p>
-                <img class="gradientBG" src="img/interior.png" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/interior.png"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct37">
                 <div id="celutitle" style="width: 100%; justify-content: space-between;">
@@ -408,38 +457,46 @@
                 </div>
 
                 <p class="title">INTERIOR DOMESTIC</p>
-                <img class="gradientBG" src="img/domestik.jpg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/domestik.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct38">06</div>
             <div class="pryct39">
-                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTING</p>
+                <p class="messinaText" style="margin: 0; padding: 0;">PRESENTANDO</p>
                 <p style="margin: 0; padding: 0;">OTHERS</p>
                 <img src="img/flechitaLateral.png" style="height: 2vh; margin-top: 4vh;" alt="">
             </div>
             <div class="pryct40"></div>
             <div class="pryct41">
                 <p class="titleAB">DIDI&#174;</p>
-                <img class="gradientBG" src="img/didi.png" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/didi.png"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
             <div class="pryct42">
                 <p class="titleAB">THE WUUF</p>
-                <img class="gradientBG" src="img/thewoof.jpg" style="top: 0; left: 0; z-index: -1; min-width: 100%; height: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;" alt="">
+                <img class="gradientBG" src="img/thewoof.jpg"
+                    style="top: 0; left: 0; z-index: -1; min-width: 100%; height: auto; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"
+                    alt="">
             </div>
-            <div class="pryct43">
-                
+            <div class="pryct43" style="display: none;">
+
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>CANDELARIA</p>
                     <p>GR 001</p>
                 </div>
-                
+
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                     <p>ARCHITECTURAL PHOTOGRAPHY</p>
                     <p class="title">AROUND THE CITY</p>
                 </div>
             </div>
             <div class="pryct44">07?</div>
-            <div style="grid-column: span 6 / span 6; grid-row-start: 31; margin-top: 1vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2vh; margin-bottom: 2vh;">
-                <div style="display: flex; flex-direction: row; gap: 0.5vh; justify-content: center; align-items: center;">
+            <div
+                style="grid-column: span 6 / span 6; grid-row-start: 31; margin-top: 1vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2vh; margin-bottom: 2vh;">
+                <div
+                    style="display: flex; flex-direction: row; gap: 0.5vh; justify-content: center; align-items: center;">
                     <img src="img/nubecita.svg" style="height: 1.3vh;" alt="">
                     <p class="messinaText" style="color: #CCCBC4; font-size: 2vh;">[INCOMING MESSAGE FROM CREATOR]</p>
                 </div>

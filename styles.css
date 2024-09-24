@@ -2485,6 +2485,13 @@ iframe {
     width: fit-content;
 }
 
+#TEXTOLEER{
+    width: 90%;
+    margin-inline: auto;
+    text-align: justify;
+    font-size: 3vh;
+}
+
 @media only screen and (max-width: 600px) {
     .nombreEt {
         display: none;
@@ -3328,4 +3335,7 @@ iframe {
         width: fit-content;
     }
 
+    #TEXTOLEER{
+        font-size: 2vh;
+    }
 }

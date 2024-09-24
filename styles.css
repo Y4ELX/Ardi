@@ -2997,12 +2997,14 @@ iframe {
     }
 
     .pryct8 {
+        grid-column: span 6 / span 6;
         justify-content: end;
         font-size: 2.5vh;
         height: 10vh;
     }
 
     .pryct9 {
+        display: none;
         justify-content: end;
         font-size: 2.5vh;
         height: 10vh;

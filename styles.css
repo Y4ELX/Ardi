@@ -591,6 +591,7 @@ hr {
 .imgContL{
     margin-top: 15vh;
     width: 10vw;
+    height: 10vw;
     border-radius: 100vh;
     overflow: hidden;
 }
@@ -3184,6 +3185,7 @@ iframe {
 
     .imgContL{
         margin-top: 16vh;
+        height: 40vw;
         width: 40vw;
     }
 

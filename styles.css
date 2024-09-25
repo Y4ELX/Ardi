@@ -1073,7 +1073,7 @@ iframe {
     width: 65%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 3.5vh;
+    gap: 1.5vh;
 }
 
 .div1 {

@@ -771,7 +771,7 @@ hr {
     align-items: center;
     font-family: messinaSB;
     color: rgba(239, 239, 235, 0.4);
-    z-index: 2;
+    z-index: 3;
     font-size: 2vh;
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }

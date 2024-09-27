@@ -20,8 +20,8 @@ body {
     align-items: center;
     gap: 2vh;
     position: relative;
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
 
     border-radius: 100vh;
     border: solid 0.001vh #88827d5b;
@@ -73,8 +73,8 @@ body {
 }
 
 .flag-icon {
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
 }
 
 .navbar {
@@ -468,8 +468,8 @@ hr {
     border-radius: 100vh;
     margin: 0px;
     padding: 0px;
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -517,7 +517,7 @@ hr {
 .minimenu {
     position: absolute;
     width: fit-content;
-    height: 3vh;
+    height: 2vh;
     left: 50%;
     transform: translateX(-50%);
     padding: 1vh;
@@ -551,15 +551,15 @@ hr {
     font-family: futura-pt-bold;
     color: #FFF6E5;
     z-index: 2;
-    font-size: 2vh;
+    font-size: 1.6vh;
     border-radius: 100vh;
     text-align: center;
-    width: 10vh;
+    width: 8vh;
     padding: 1vh 0.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 1.5vh);
+    height: calc(100% - 1vh);
 
 
     transition: background 0.7s ease;
@@ -574,15 +574,15 @@ hr {
     font-family: futura-pt;
     color: #fff6e5;
     z-index: 2;
-    font-size: 2vh;
+    font-size: 1.6vh;
     border-radius: 100vh;
     text-align: center;
-    width: 10vh;
+    width: 8vh;
     padding: 1vh 0.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 1.5vh);
+    height: calc(100% - 1vh);
 
 
     transition: background 0.7s ease;
@@ -610,7 +610,7 @@ hr {
     color: #fff6e5;
     border-radius: 100vh;
     text-align: center;
-    width: 10vh;
+    width: 8vh;
     height: calc(100% - 1.5vh);
     padding: 0 0.5vh;
     transition: transform 0.4s ease-in-out;
@@ -2261,8 +2261,8 @@ iframe {
 
 .manita {
     margin-right: 1vh;
-    height: 6vh;
-    width: 6vh;
+    height: 4vh;
+    width: 4vh;
     background-repeat: no-repeat;
     background-size: contain;
     border: none;

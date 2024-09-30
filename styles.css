@@ -776,6 +776,10 @@ hr {
     border: dashed 0.25vh rgba(239, 239, 235, 0.4);
 }
 
+.chispas{
+    opacity: 0;
+}
+
 .insideDiv {
     width: calc(100% - 5vh);
     height: calc(100% - 5vh);

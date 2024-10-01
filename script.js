@@ -1,19 +1,20 @@
 try {
     const audio = document.getElementById('audio');
     const seekSlider = document.getElementById('seekSlider');
-    const ESPP = document.getElementById('ESP');
-    const ENGP = document.getElementById('ENG');
     const currentTimeDisplay = document.getElementById('currentTime');
     const durationDisplay = document.getElementById('duration');
     const playPauseBtn = document.getElementById('playPauseBtn');
 
-    audio.src = "img/audio.mp3";
-    playPauseBtn.style.backgroundImage = 'url("img/playbutton.svg")';
-    ESPP.style.textDecoration = 'underline';
-    ESPP.style.color = '#E6E5DD';
-    ENGP.style.textDecoration = 'none';
-    ENGP.style.color = '#8b8b8b';
+    // Verificar el nombre del archivo en la URL
+    const currentPage = window.location.pathname.split('/').pop(); // Obtener el nombre del archivo actual
 
+    if (currentPage === "indexen.html") {
+        audio.src = "img/audioENG.mp3";  // Cambiar el audio a inglés si es "indexen.html"
+    } else {
+        audio.src = "img/audio.mp3";  // Usar el audio en español por defecto
+    }
+
+    playPauseBtn.style.backgroundImage = 'url("img/playbutton.svg")';
     audio.load();
 
     audio.addEventListener('loadedmetadata', () => {
@@ -94,6 +95,7 @@ try {
 } catch (error) {
     console.error("Error en el manejo del audio y el slider:", error);
 }
+
 
 //! Cursor
 

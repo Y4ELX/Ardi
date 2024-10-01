@@ -1,76 +1,173 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animación de Texto</title>
+    <title>Vista Previa de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #f0f0f0;
+        /* Estilo general para los divs de imagen */
+        .parentPR {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .container {
-            overflow: hidden;
-            height: 100vh;
-            /* Ajusta según el tamaño de tu texto */
-            position: relative;
-            width: 300px;
-            /* Ajusta según el tamaño de tu texto */
+        .pryct4 {
+            width: 100%;
+            height: 150px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .text-wrapper {
-            display: flex;
-            flex-direction: column;
-            transition: transform 1s;
-            top: 0;
+        .pryct4:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo para el Modal */
+        .modal {
+            display: none;
+            /* Oculto por defecto */
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
             left: 0;
-            height: 10vh;
-            overflow: hidden;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
-        .text {
-            margin: 0;
-            padding: 0;
-            background: white;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            height: 10vh;
-            display: flex;
+        /* Imagen dentro del Modal */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Texto para la Descripción */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+        }
+
+        /* Botón de Cerrar */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-wrapper">
-            <p class="text">Texto 1</p>
-            <p class="text">Texto 2</p>
-            <p class="text">Texto 3</p>
-            <p class="text">Texto 4</p>
+    <!-- Divs con imágenes -->
+    <div class="parentPR">
+        <div id="octo1" class="pryct4"
+            style="background-image: url('img/octo1.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo2" class="pryct4"
+            style="grid-column: span 3 / span 3; background-image: url('img/octo2.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo3" class="pryct4"
+            style="grid-column: span 3 / span 3; background-image: url('img/octo3.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo4" class="pryct4"
+            style="background-image: url('img/octo4.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo5" class="pryct4"
+            style="background-image: url('img/octo5.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo6" class="pryct4"
+            style="background-image: url('img/octo6.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo7" class="pryct4"
+            style="background-image: url('img/octo7.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo8" class="pryct4"
+            style="background-image: url('img/octo8.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo9" class="pryct4"
+            style="background-image: url('img/octo9.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo10" class="pryct4"
+            style="background-image: url('img/octo10.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo11" class="pryct4"
+            style="background-image: url('img/octo11.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        </div>
+        <div id="octo12" class="pryct4"
+            style="background-image: url('img/octo12.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
         </div>
     </div>
+
+    <!-- Modal para vista previa -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
     <script>
-        const texts = document.querySelectorAll('.text');
-        const wrapper = document.querySelector('.text-wrapper');
-        let currentIndex = 0;
+        // Seleccionar el modal y sus elementos
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const captionText = document.getElementById("caption");
+        const closeBtn = document.querySelector(".close");
 
-        function showNextText() {
-            const totalTexts = texts.length;
-            wrapper.style.transform = `translateY(-${currentIndex * 100}%)`;
-            currentIndex = (currentIndex + 1) % totalTexts;
-        }
+        // Obtener todos los divs con la clase "pryct4"
+        const images = document.querySelectorAll('.pryct4');
 
-        function startAnimation() {
-            setInterval(showNextText, 3000); // Cambia de texto cada 3 segundos
-        }
+        // Asignar el evento de clic a cada div para abrir el modal con la imagen correspondiente
+        images.forEach(div => {
+            div.addEventListener('click', function () {
+                // Obtener la URL de la imagen de fondo
+                const backgroundImg = window.getComputedStyle(div).backgroundImage;
+                const imageUrl = backgroundImg.slice(5, -2); // Extraer la URL entre 'url("...")'
 
-        window.onload = startAnimation;
+                // Mostrar el modal y establecer la imagen
+                modal.style.display = "block";
+                modalImg.src = imageUrl;
+
+                // Opcional: mostrar un título o descripción (usa el id del div como texto)
+                captionText.innerHTML = `Vista previa de ${div.id}`;
+            });
+        });
+
+        // Cerrar el modal cuando se hace clic en el botón "x"
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // También cerrar el modal al hacer clic fuera de la imagen
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
     </script>
 </body>
 

@@ -106,7 +106,7 @@
                     <div style="width: 100%; display: flex; flex-direction: row; justify-content: start; gap: 2vh;">
 
                         <div
-                            style="display: flex; justify-content: center; align-items: center; position: relative; top: 1vh; width: 7vh; height: 7vh; border-radius: 1vh; background-image: url(img/gradient3.png);">
+                            style="display: flex; justify-content: center; align-items: center; position: relative; top: 1vh; width: 7vh; height: 7vh; border-radius: 1vh; background-image: url(img/gradient3.png); background-size: cover; background-repeat: no-repeat;">
                             <img class="gradientBG" src="img/blur.png"
                                 style="top: -40%; left: -40%; width: 180%; height: 180%;" alt="">
                             <img src="img/emoji.svg" style="width: 70%; height: auto;" alt="">
@@ -196,7 +196,7 @@
                     REMEMBER, [BECOMING IS BETTER THAN BEING]
                     <!-- <img src="img/ojos.png" style="width: 10vh;" alt=""> -->
                     <dotlottie-player src="https://lottie.host/0d0686b6-8021-43f1-82f3-26826d487e1a/hrDyT7Hhe1.json"
-                        background="transparent" speed="1" style="width: 10vh; height: auto;" loop autoplay></dotlottie-player>
+                        background="transparent" speed="1" style="opacity: 0.25; width: 10vh; height: auto;" loop autoplay></dotlottie-player>
                 </div>
             </div>
 
@@ -301,15 +301,15 @@
         </div>
 
         <div style="display: flex; flex-direction: row; gap: 2vh; font-size: 2.5vh;">
-            <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="changelang('ENG')" id="ENG" style="cursor: pointer;">ENG</p>
+            <p onmouseover="cursorPT()" onmouseleave="cursorNM()" id="ENG">ENG</p>
         </div>
 
-        <audio id="audio" src="img/audio.mp3"></audio>
+        <audio id="audio" src="img/audioENG.mp3"></audio>
 
         <div class="audio-player">
             <div
                 style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 2vh;">
-                <button id="playPauseBtn" class="playPauseBtn"></button>
+                <button onmouseover="cursorPT()" onmouseleave="cursorNM()" id="playPauseBtn" class="playPauseBtn"></button>
                 <input class="range" type="range" id="seekSlider" value="0" max="100">
             </div>
             <div
@@ -576,16 +576,21 @@ known as coffee).
                 <div style="display: flex; flex-direction: column; gap: 2vh;">
                     <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">EXPLORE</p>
                     <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="window.location.href='worken.html'" class="linksExt">WORK <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
-                    <div class="linksExt">CONTACT <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
-                    <div class="linksExt">INSPIRATION <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                    <div class="linksExt" onmouseover="cursorPT()" onmouseleave="cursorNM()"  onclick="openMenu()">CONTACT <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                    <div class="linksExt">INSPIRATION
+                        <button
+                            style="height: 2.5vh; width: 7vh; font-size: 1.3vh; border-radius: 100vh; text-align: center; background-color: #181818; color: #fff6e5; font-family: futura-pt; border: none;">
+                            SOON ...
+                        </button>
+                    </div>
                 </div>
     
                 <div style="display: flex; flex-direction: column; gap: 2vh;">
                     <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">CREATIVE TOOLS</p>
                     <div class="linksExt">RESOURCES
                         <button
-                            style="height: 2vh; font-size: 1.5vh; border-radius: 100vh; background-color: #f2f2f21d; color: #fff6e5; font-family: futura-pt; border: none;">
-                            SOON
+                            style="height: 2.5vh; width: 7vh; font-size: 1.3vh; border-radius: 100vh; text-align: center; background-color: #181818; color: #fff6e5; font-family: futura-pt; border: none;">
+                            SOON ...
                         </button>
                     </div>
                 </div>

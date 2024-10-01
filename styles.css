@@ -777,6 +777,9 @@ hr {
 }
 
 .chispas{
+    height: 1.7vh;
+    margin-top: 0.2vh;
+    margin-right: 0.7vh;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -964,7 +967,7 @@ iframe {
     color: #E6E5DD;
     z-index: 2;
     font-size: 2.5vh;
-    border: dashed 0.25vh rgba(239, 239, 235, 0.4);
+    /* border: dashed 0.25vh rgba(239, 239, 235, 0.4); */
 
 }
 
@@ -2498,6 +2501,59 @@ iframe {
     font-size: 3vh;
 }
 
+/* Estilo para el Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 3vh;
+    width: auto;
+    height: 100%;
+}
+
+/* Texto para la Descripción */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Botón de Cerrar */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
     .nombreEt {
         display: none;
@@ -2509,6 +2565,8 @@ iframe {
 
     .manita {
         background-image: url('img/manita2svg.svg');
+        height: 5vh;
+        width: 5vh;
     }
 
     .colombiaBtn {
@@ -2959,10 +3017,13 @@ iframe {
 
     .minimenu {
         backdrop-filter: blur(1vh);
+        height: 3vh;
     }
 
     .btnArroba {
         backdrop-filter: blur(1vh);
+        height: 5vh;
+        width: 5vh;
     }
 
     .lucecita {

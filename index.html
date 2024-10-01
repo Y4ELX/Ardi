@@ -191,7 +191,7 @@
                     REMEMBER, [BECOMING IS BETTER THAN BEING]
                     <!-- <img src="img/ojos.png" style="width: 10vh;" alt=""> -->
                     <dotlottie-player src="https://lottie.host/0d0686b6-8021-43f1-82f3-26826d487e1a/hrDyT7Hhe1.json"
-                        background="transparent" speed="1" style="opacity: 0.25; width: 10vh; height: auto;" loop autoplay></dotlottie-player>
+                        background="transparent" speed="1" style="opacity: 0.25; width: 8vh; height: auto;" loop autoplay></dotlottie-player>
                 </div>
             </div>
         
@@ -212,14 +212,19 @@
             </div>
 
             <div id="RBBBcelu" class="RBBB">
-                <div class="insideDiv">
+                <div class="insideDiv" style="gap: 0vh;">
                     REMEMBER, [BECOMING IS BETTER THAN BEING]
                     <dotlottie-player src="https://lottie.host/0d0686b6-8021-43f1-82f3-26826d487e1a/hrDyT7Hhe1.json"
-                        background="transparent" speed="1" style="opacity: 0.25; width: 10vh; height: auto;" loop autoplay></dotlottie-player>                </div>
+                        background="transparent" speed="1" style="opacity: 0.25; width: 8vh; height: auto;" loop autoplay></dotlottie-player>                </div>
             </div>
         
             <div class="insignias">
-                <img class="gradientBG" src="img/gradient.gif" alt="">
+                <img class="gradientBG" src="img/gradient.gif"
+                style="
+                mask-image: linear-gradient(90deg, rgba(214,212,213,0) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 98%, rgba(214,212,213,0) 100%);
+                -webkit-mask-image: linear-gradient(90deg, rgba(214,212,213,0) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 98%, rgba(214,212,213,0) 100%);
+                "
+                alt="">
 
                 <div class="borderLines"></div>
         
@@ -287,7 +292,7 @@
             </div>
         
             <div style="display: flex; flex-direction: row; gap: 2vh; font-size: 2.5vh;">
-                <p onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="changelang('ESP')" id="ESP" style="   text-decoration: underline;">ESP</p>
+                <p onmouseover="cursorPT()" onmouseleave="cursorNM()" id="ESP" style="   text-decoration: underline;">ESP</p>
             </div>
         
             <audio id="audio" src="img/audio.mp3"></audio>
@@ -512,8 +517,7 @@
             <div class="b3">
 
             </div>
-            <div class="b4">
-                <img id="imagenesindex" class="gradientBGCREO" style="width: 100%; height: auto ;" src="img/NUVO.png"  alt="">
+            <div class="b4" style="background-image: url(img/NUVO.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>GROCERIES EVOLVED</p>
@@ -526,15 +530,12 @@
                 </div>
                 
             </div>
-            <div class="b5">
-                <img id="imagenesDobl" id="imagenesindex" class="gradientBGCREO" src="img/onlythebrave.jpg" alt="">
+            <div class="b5" style="background-image: url(img/onlythebrave.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
             </div>
-            <div class="b6">
-                <img id="imagenesDobl" class="gradientBGCREO" src="img/lereve.jpg" alt="">
+            <div class="b6" style="background-image: url(img/lereve.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
             </div>
             
-            <div class="b7">
-                <img id="imagenesindex" class="gradientBGCREO" src="img/guantes.png" alt="">
+            <div class="b7" style="background-image: url(img/guantes.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 
                 <div style="width: 100%; display: flex; justify-content: space-between;">
                     <p>THE SURGEON</p>
@@ -547,12 +548,10 @@
                 </div>
             </div>
 
-            <div class="b8">
-                <img id="imagenesindex" class="gradientBGCREO" src="img/petss.svg"
-                    alt="">
+            <div class="b8" style="background-image: url(img/petss.svg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
             </div>
-            <div class="b9">
-                <img id="imagenesindex" class="gradientBGCREO" src="img/flw.svg" alt="">
+            <div class="b9" style="background-image: url(img/flw.svg); background-size: cover; background-position: center; background-repeat: no-repeat;">
             </div>
         </div>
 
@@ -578,15 +577,20 @@
                     <div style="display: flex; flex-direction: column; gap: 2vh;">
                         <p onmouseover="cursorPT()" onmouseleave="cursorNM()" style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">EXPLORAR</p>
                         <div onclick="window.location.href='workes.html'" onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt" class="linksExt">TRABAJO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
-                        <div onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt">CONTACTO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
-                        <div onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt">INSPIRACION <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div onmouseover="cursorPT()" onmouseleave="cursorNM()" onclick="openMenu()" class="linksExt">CONTACTO <img src="img/flechita.png" style="height: 1.5vh;" alt=""></div>
+                        <div onmouseover="cursorPT()" onmouseleave="cursorNM()" class="linksExt">INSPIRACION
+                            <button
+                                style="height: 2.5vh; width: 7vh; font-size: 1.3vh; border-radius: 100vh; text-align: center; background-color: #181818; color: #fff6e5; font-family: futura-pt; border: none;">
+                                SOON ...
+                            </button>
+                        </div>
                     </div>
 
                     <div style="display: flex; flex-direction: column; gap: 2vh;">
                         <p style="font-family: messinaSB; color: #8d8d8d; font-size: 2.4vh;">HERRAMIENTAS CREATIVAS</p>
                         <div class="linksExt">RECURSOS 
-                            <button style="height: 2vh; font-size: 1.5vh; border-radius: 100vh; background-color: #f2f2f21d; color: #fff6e5; font-family: futura-pt; border: none;" >
-                                SOON
+                            <button style="height: 2.5vh; width: 7vh; font-size: 1.3vh; border-radius: 100vh; text-align: center; background-color: #181818; color: #fff6e5; font-family: futura-pt; border: none;" >
+                                SOON ...
                             </button>
                         </div>
                     </div>
@@ -610,7 +614,52 @@
 
     </div>
 
+    <!-- Modal para vista previa -->
+    <div id="imageModal" class="modal">
+        <span onmouseover="cursorPT()" onmouseleave="cursorNM()" class="close" >&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
 </body>
+
+<script>
+    // Seleccionar el modal y sus elementos
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.querySelector(".close");
+
+    // Obtener todos los divs con la clase "pryct4"
+    const images = document.querySelectorAll('.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9');
+
+    // Asignar el evento de clic a cada div para abrir el modal con la imagen correspondiente
+    images.forEach(div => {
+        div.addEventListener('click', function () {
+            // Obtener la URL de la imagen de fondo
+            const backgroundImg = window.getComputedStyle(div).backgroundImage;
+            const imageUrl = backgroundImg.slice(5, -2); // Extraer la URL entre 'url("...")'
+
+            // Mostrar el modal y establecer la imagen
+            modal.style.display = "flex";
+            modalImg.src = imageUrl;
+
+            // Opcional: mostrar un título o descripción (usa el id del div como texto)
+            captionText.innerHTML = `Vista previa de ${div.id}`;
+        });
+    });
+
+    // Cerrar el modal cuando se hace clic en el botón "x"
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    // También cerrar el modal al hacer clic fuera de la imagen
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
 
 <script>
     function irA(seccion) {
@@ -753,5 +802,4 @@
         animationData: animationData
     });
 </script>
-
 </html>

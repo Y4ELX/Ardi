@@ -154,7 +154,7 @@
             </p>
 
             <p class="chispas" style="margin-top: 5vh; text-align: center; font-family: futura-pt; width: 90vw; font-size: 15px; color: white; display: flex; justify-content: center; align-items: center;">
-                <img src="img/chispas.png" style="height: 1.7vh; margin-top: 0.2vh; margin-right: 0.7vh;" alt="">
+                <img src="img/chispas.png" class="chispas" alt="">
                 Copiado
             </p>
 
@@ -177,6 +177,26 @@
     </div>
 
 </body>
+
+<script>
+    function copyEmail() {
+        // Copiar el correo al portapapeles
+        const email = 'NEBULA.DESIGNBRAND@GMAIL.COM';
+        navigator.clipboard.writeText(email).then(() => {
+            // Cambiar la opacidad de la clase .chispas a 1
+            const chispasElement = document.querySelector('.chispas');
+            chispasElement.style.opacity = '1';
+
+            // Después de 2 segundos, cambiar la opacidad a 0
+            setTimeout(() => {
+                chispasElement.style.opacity = '0';
+            }, 2000);
+        }).catch(err => {
+            console.error('Error al copiar el correo: ', err);
+        });
+    }
+</script>
+
 <script>
 
     function openMenu() {

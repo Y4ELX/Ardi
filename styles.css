@@ -3406,4 +3406,9 @@ iframe {
     #TEXTOLEER{
         font-size: 2vh;
     }
+
+    .modal-content {
+        width: 100%;
+        height: auto;
+    }
 }

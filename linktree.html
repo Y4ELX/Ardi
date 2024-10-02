@@ -153,8 +153,8 @@
                 |Diseñador Industrial| Fotógrafo & Filmmaker | Atleta |
             </p>
 
-            <p class="chispas" style="margin-top: 5vh; text-align: center; font-family: futura-pt; width: 90vw; font-size: 15px; color: white; display: flex; justify-content: center; align-items: center;">
-                <img src="img/chispas.png" class="chispas" alt="">
+            <p id="chispas" class="chispas" style="margin-top: 5vh; text-align: center; font-family: futura-pt; width: 90vw; font-size: 15px; color: white; display: flex; justify-content: center; align-items: center;">
+                <img src="img/chispas.png" style="height: 1.4vh; margin-top: 0.2vh; margin-right: 0.7vh;" alt="">
                 Copiado
             </p>
 
@@ -162,7 +162,7 @@
                 <button style="background-image: url(img/instagramicon.svg);" onclick="window.open('https://www.instagram.com/juanp.ardilasf/')" class="iconsClic"></button>
                 <button style="background-image: url(img/behanceicon.svg);" onclick="window.open('https://www.behance.net/juanpardila')" class="iconsClic"></button>
                 <button style="background-image: url(img/linkedinicon.svg);" onclick="window.open('https://www.linkedin.com/in/juanpabloardilam')" class="iconsClic"></button>
-                <button style="background-image: url(img/correoicon.svg);" onclick="window.open('https://mail.google.com/mail/u/0/?fs=1&to=NEBULA.DESIGNBRAND@GMAIL.COM&body&tf=cm')" class="iconsClic"></button>
+                <button id="correoCop" style="background-image: url(img/correoicon.svg);" onclick="mostrarChispas()" class="iconsClic"></button>
             </div>
 
             <div style="margin-top: 6vh;">
@@ -181,19 +181,39 @@
 <script>
     function copyEmail() {
         // Copiar el correo al portapapeles
-        const email = 'NEBULA.DESIGNBRAND@GMAIL.COM';
-        navigator.clipboard.writeText(email).then(() => {
-            // Cambiar la opacidad de la clase .chispas a 1
-            const chispasElement = document.querySelector('.chispas');
-            chispasElement.style.opacity = '1';
+        const email = 'nebula.designbrand@gmail.com';
 
-            // Después de 2 segundos, cambiar la opacidad a 0
-            setTimeout(() => {
-                chispasElement.style.opacity = '0';
-            }, 2000);
-        }).catch(err => {
-            console.error('Error al copiar el correo: ', err);
-        });
+        // Verificar si la API Clipboard está disponible
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(email).then(() => {
+                console.log('Correo copiado: ' + email);
+            }).catch(err => {
+                console.error('Error al copiar el correo: ', err);
+            });
+        } else {
+            console.error('La API Clipboard no está disponible en este navegador.');
+            alert(email);
+        }
+    }
+    
+    function mostrarChispas() {
+        const chispas = document.getElementById('chispas');
+
+        // Detectar si es un dispositivo móvil o de escritorio
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        // Mostrar la animación de chispas
+        chispas.style.opacity = '1'; // Mostrar el elemento con opacidad 1
+        copyEmail(); // Copiar el correo al portapapeles
+        setTimeout(() => {
+            chispas.style.opacity = '0'; // Desvanecer después de 2 segundos
+        }, 2000);
+
+        // Si no es un dispositivo móvil, abrir el enlace
+        if (!isMobile) {
+            window.open('https://mail.google.com/mail/u/0/?fs=1&to=nebula.designbrand@gmail.com&body&tf=cm', '_blank');
+            copyEmail(); // Copiar el correo al portapapeles
+        }
     }
 </script>
 

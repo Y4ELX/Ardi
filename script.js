@@ -115,9 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const textToCopy = 'NEBULA.DESIGNBRAND@GMAIL.COM';
+    const textToCopy = 'nebula.designbrand@gmail.com';
 
-    const button = document.querySelector('.nebdes');
+    const button = document.querySelectorAll('.nebdes');
     const labelContInt = document.querySelector('.labelContInt');
 
     button.addEventListener('mouseover', () => {

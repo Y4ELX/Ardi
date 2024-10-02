@@ -1083,7 +1083,7 @@ iframe {
     width: 65%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1.5vh;
+    gap: 2.3vh;
 }
 
 .div1 {
@@ -1091,7 +1091,7 @@ iframe {
 
     height: 30vh;
     border-radius: 3vh;
-    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    padding: 2.5vh 2.5vh 2.5vh 2.5vh;
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -1109,7 +1109,7 @@ iframe {
     grid-column-start: 4;
     height: 30vh;
     border-radius: 3vh;
-    padding: 2.5vh 4vh 2.5vh 2.5vh;
+    padding: 2.5vh 2.5vh 2.5vh 2.5vh;
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -2871,7 +2871,7 @@ iframe {
     .div4 {
         grid-column: span 3 / span 3;
         flex-direction: row;
-        grid-row-start: 7;
+        grid-row-start: 6;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }
@@ -2881,7 +2881,7 @@ iframe {
         text-align: center;
         grid-column: span 3 / span 3;
         flex-direction: column;
-        grid-row-start: 8;
+        grid-row-start: 7;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }
@@ -2905,7 +2905,7 @@ iframe {
     .div8 {
         grid-column: span 3 / span 3;
         flex-direction: row;
-        grid-row-start: 9;
+        grid-row-start: 8;
         width: calc(90vw - 6.5vh);
         height: fit-content;
     }

@@ -168,7 +168,7 @@ body {
 }
 
 .principalDivW {
-    background-color: #000000;
+    /* background-color: #000000; */
     margin: 0px;
     padding: 0px;
 
@@ -181,9 +181,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url(img/fnbg.png);
+    /* background-image: url(img/fnbg.png);
     background-size: 30vh;
-    background-repeat: repeat;
+    background-repeat: repeat; */
 }
 
 .iconsClic{
@@ -3019,6 +3019,20 @@ iframe {
     .minimenu {
         backdrop-filter: blur(1vh);
         height: 3vh;
+    }
+
+    .optionsA{
+        font-size: 1.9vh;
+        width: 10vh;
+    }
+
+    .optionsT{
+        font-size: 1.9vh;
+        width: 10vh;
+    }
+
+    .optionSel{
+        width: 10vh;
     }
 
     .btnArroba {

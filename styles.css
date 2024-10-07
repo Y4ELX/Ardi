@@ -2584,8 +2584,9 @@ iframe {
     }
 
     .colombiaBtn.open {
-        width: 18vh;
+        width: 16vh;
         padding-left: 2vh;
+        padding-right: 2vh;
         background-color: #FFF6E5;
         background-image: none;
         color: #000000;

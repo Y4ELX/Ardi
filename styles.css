@@ -39,6 +39,7 @@ body {
     white-space: pre;
     margin-top: 1vh;
     margin-bottom: 3vh;
+    text-align: center;
 }
 
 .contactame {
@@ -2573,7 +2574,7 @@ iframe {
         width: 2vh;
         position: absolute;
         z-index: 2;
-        font-size: 1.5vh;
+        font-size: 1.4vh;
         left: 65vw;
         top: 33vh;
         display: flex;
@@ -2583,7 +2584,7 @@ iframe {
     }
 
     .colombiaBtn:hover {
-        width: 19vh;
+        width: 18vh;
         padding-left: 2vh;
         background-color: #FFF6E5;
         background-image: none;

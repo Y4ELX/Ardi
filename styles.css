@@ -2575,7 +2575,7 @@ iframe {
         position: absolute;
         z-index: 2;
         font-size: 1.4vh;
-        left: 65vw;
+        left: 67vw;
         top: 33vh;
         display: flex;
         justify-content: center;
@@ -2584,7 +2584,7 @@ iframe {
     }
 
     .colombiaBtn.open {
-        width: 16vh;
+        width: 13vh;
         padding-left: 2vh;
         padding-right: 2vh;
         background-color: #FFF6E5;

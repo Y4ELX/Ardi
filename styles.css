@@ -2575,12 +2575,13 @@ iframe {
         position: absolute;
         z-index: 2;
         font-size: 1.4vh;
-        left: 67vw;
+        left: 70vw;
         top: 33vh;
         display: flex;
         justify-content: center;
         align-items: center;
         text-wrap: wrap;
+        text-align: left;
     }
 
     .colombiaBtn.open {

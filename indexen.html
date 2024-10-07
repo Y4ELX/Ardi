@@ -64,7 +64,7 @@
 
     </div>
 
-    <button class="colombiaBtn">From Colombia to <br>the world</button>
+    <button id="toggleButton" class="colombiaBtn">De Colombia, para <br>el mundo</button>
     <div class="image-container"></div>
 
     <div class="principalDiv">
@@ -622,6 +622,14 @@ known as coffee).
     </div>
 
 </body>
+
+<script>
+    const colombiaBtn = document.getElementById('toggleButton');
+
+    colombiaBtn.addEventListener('click', () => {
+        colombiaBtn.classList.toggle('open');
+    });
+</script>
 
 <script>
     function irA(seccion) {

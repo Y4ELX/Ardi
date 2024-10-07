@@ -137,7 +137,7 @@ body {
     gap: 3vh;
 }
 
-.colombiaBtn:hover {
+.colombiaBtn.open{
     width: 32vh;
     padding-left: 11vh;
     background-size: 10vh;
@@ -2583,7 +2583,7 @@ iframe {
         text-wrap: wrap;
     }
 
-    .colombiaBtn:hover {
+    .colombiaBtn.open {
         width: 18vh;
         padding-left: 2vh;
         background-color: #FFF6E5;

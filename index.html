@@ -64,7 +64,8 @@
 
     </div>
 
-    <button class="colombiaBtn">De Colombia, para <br>el mundo</button>
+    <button id="toggleButton" class="colombiaBtn">De Colombia, para <br>el mundo</button>
+    
     <div class="image-container"></div>
 
     <div class="principalDiv">
@@ -621,6 +622,14 @@
     </div>
 
 </body>
+
+<script>
+    const colombiaBtn = document.getElementById('toggleButton');
+
+    colombiaBtn.addEventListener('click', () => {
+        colombiaBtn.classList.toggle('open');
+    });
+</script>
 
 <script>
     // Seleccionar el modal y sus elementos

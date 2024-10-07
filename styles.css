@@ -2265,6 +2265,7 @@ iframe {
     transform-origin: 50% 50%;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .manita {

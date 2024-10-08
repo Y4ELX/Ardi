@@ -137,6 +137,14 @@ body {
     gap: 3vh;
 }
 
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
 .colombiaBtn.open{
     width: 32vh;
     padding-left: 11vh;
@@ -2566,9 +2574,53 @@ iframe {
     text-decoration: none;
 }
 
+/* Estilo para los botones de navegación del modal */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10;
+}
+
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Efectos hover */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 @media only screen and (max-width: 600px) {
     .nombreEt {
         display: none;
+    }
+
+    .next {
+    right: 1px;
+    padding-top: 40px;
+    border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+    left: 1px;
+    padding-top: 40px;
+    border-radius: 3px 0 0 3px;
     }
 
     #language-selector {

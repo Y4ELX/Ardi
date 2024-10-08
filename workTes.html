@@ -107,7 +107,7 @@
                         </div>
         
                         <div style="width: fit-content; display: flex; flex-direction: column; justify-content: center;">
-                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5;">JUAN PABLO ARDILA</p>
+                            <p style="font-family: stratosSB; font-size: 3vh; color: #fff6e5;">JUAN PABLOARDILA</p>
                             <p style="font-family: futura-pt; font-size: 2vh; color: #fff6e5;">
                                 @juan.ardilasf
                             </p>
@@ -521,57 +521,69 @@
 <div id="imageModal" class="modal">
     <span onmouseover="cursorPT()" onmouseleave="cursorNM()" class="close">&times;</span>
     <img class="modal-content" id="modalImg">
+    <a onmouseover="cursorPT()" onmouseleave="cursorNM()" class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a onmouseover="cursorPT()" onmouseleave="cursorNM()" class="next" onclick="changeImage(1)">&#10095;</a>
 </div>
+
 
 </body>
 
 <script>
     // Seleccionar el modal y sus elementos
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-    const captionText = document.getElementById("caption");
-    const closeBtn = document.querySelector(".close");
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeBtn = document.querySelector(".close");
+        const projects = Array.from(document.querySelectorAll('.pryct4'));
+        let currentImageIndex = 0; // Para rastrear la imagen actual en el modal
 
-    // Obtener todos los divs con las clases especificadas
-    const projects = document.querySelectorAll('.pryct4, .pryct5, .pryct6, .pryct7, .pryct8, .pryct9, .pryct10, .pryct11, .pryct12, .pryct13, .pryct14, .pryct15, .pryct16, .pryct17, .pryct18, .pryct19, .pryct20, .pryct21, .pryct22, .pryct23, .pryct24, .pryct25, .pryct26, .pryct27, .pryct28, .pryct29, .pryct30, .pryct31, .pryct32, .pryct33, .pryct34, .pryct35, .pryct36, .pryct37, .pryct38, .pryct39, .pryct40, .pryct41, .pryct42, .pryct43, .pryct44, .pryct45');
-
-    // Asignar el evento de clic a cada div para abrir el modal con la imagen correspondiente
-    projects.forEach(div => {
-        div.addEventListener('click', function () {
-            try {
-                // Obtener la URL de la imagen de fondo
-                const backgroundImg = window.getComputedStyle(div).backgroundImage;
-
-                // Verificar si hay una imagen de fondo
-                if (!backgroundImg || backgroundImg === 'none') {
-                    throw new Error(`No hay imagen de fondo en ${div.className}`);
-                }
-
-                const imageUrl = backgroundImg.slice(5, -2); // Extraer la URL entre 'url("...")'
-
-                // Mostrar el modal y establecer la imagen
-                modal.style.display = "flex";
-                modalImg.src = imageUrl;
-
-                // Opcional: mostrar un título o descripción (usa el id del div como texto)
-                captionText.innerHTML = `Vista previa de ${div.className}`;
-            } catch (error) {
-                console.error(error.message); // Imprimir el error en la consola
-            }
+        // Asignar el evento de clic a cada div para abrir el modal con la imagen correspondiente
+        projects.forEach((div, index) => {
+            div.addEventListener('click', function () {
+                openModal(index);
+            });
         });
-    });
 
-    // Cerrar el modal cuando se hace clic en el botón "x"
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-    };
+        function openModal(index) {
+            const backgroundImg = window.getComputedStyle(projects[index]).backgroundImage;
+            const imageUrl = backgroundImg.slice(5, -2); // Extraer la URL entre 'url("...")'
 
-    // También cerrar el modal al hacer clic fuera de la imagen
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+            // Mostrar el modal y establecer la imagen
+            modal.style.display = "flex";
+            modalImg.src = imageUrl;
+
+            // Actualizar el índice actual
+            currentImageIndex = index;
         }
-    };
+
+        // Cerrar el modal cuando se hace clic en el botón "x"
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // También cerrar el modal al hacer clic fuera de la imagen
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        // Función para cambiar a la imagen anterior o siguiente
+        function changeImage(direction) {
+            currentImageIndex += direction;
+
+            // Asegurarse de que el índice esté dentro del rango
+            if (currentImageIndex < 0) {
+                currentImageIndex = projects.length - 1; // Volver a la última imagen
+            } else if (currentImageIndex >= projects.length) {
+                currentImageIndex = 0; // Volver a la primera imagen
+            }
+
+            // Obtener la nueva imagen y actualizar el modal
+            const backgroundImg = window.getComputedStyle(projects[currentImageIndex]).backgroundImage;
+            const imageUrl = backgroundImg.slice(5, -2); // Extraer la URL
+            modalImg.src = imageUrl;
+        }
+
 </script>
 <script>
     function irA(seccion) {

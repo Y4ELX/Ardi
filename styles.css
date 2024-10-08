@@ -2610,18 +2610,7 @@ iframe {
     .nombreEt {
         display: none;
     }
-
-    .next {
-    right: 1px;
-    padding-top: 40px;
-    border-radius: 3px 0 0 3px;
-    }
-
-    .prev {
-    left: 1px;
-    padding-top: 40px;
-    border-radius: 3px 0 0 3px;
-    }
+    
 
     #language-selector {
         display: none;
